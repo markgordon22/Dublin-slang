@@ -17,9 +17,11 @@ mongo  = PyMongo(app)
 
 
 @app.route("/")
-def hello():
-    return "Hello World ... again!"
 
+
+@app.route("/glossary")
+def glossary():
+    return render_template("glossary.html")
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
