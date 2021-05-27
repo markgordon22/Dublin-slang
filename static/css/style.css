@@ -8,9 +8,18 @@ body {
     flex-direction: column;
   }
 
-  main {
+main {
     flex: 1 0 auto;
   }
+
+.brand-logo{
+ margin-left: 4px;
+}
+
+nav{
+background-color: #009900;
+}
+
 
 
 
