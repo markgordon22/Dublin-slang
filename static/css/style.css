@@ -6,6 +6,8 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Rufina', serif;
+    font-weight: 700;
   }
 
 main {
@@ -19,6 +21,17 @@ main {
 nav{
 background-color: #009900;
 }
+.brand-logo{
+letter-spacing: 1px;
+}
+
+.fab{
+font-size: 25px;
+}
+
+
+
+
 
 
 
