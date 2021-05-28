@@ -29,6 +29,10 @@ letter-spacing: 1px;
 font-size: 25px;
 }
 
+li{
+display: inline;
+}
+
 
 
 
