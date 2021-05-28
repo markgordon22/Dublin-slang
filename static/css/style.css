@@ -15,14 +15,14 @@ main {
   }
 
 .brand-logo{
- margin-left: 4px;
+ margin-left: 6px;
 }
 
 nav{
 background-color: #009900;
 }
 .brand-logo{
-letter-spacing: 2px;
+letter-spacing: 1px;
 }
 
 .fab{
