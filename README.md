@@ -1,4 +1,4 @@
-# Dublin Slang
+# Irish Slang
 
 # Table of contents
 - [User Experience](#user-experience)
