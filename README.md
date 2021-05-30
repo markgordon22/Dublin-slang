@@ -50,7 +50,9 @@
 visit Ireland in the future and have an interest or an intrigue in words/phrases Irish people use.
 
 
-# User Goals
+# User Stories
+
+## First time user stories
 
 * I want to be able to know what the site is about.
 * I want to be able to navigate with no issues throughout the site.
