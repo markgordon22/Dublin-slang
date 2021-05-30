@@ -60,11 +60,15 @@ visit Ireland in the future and have an interest or an intrigue in words/phrases
 * I want to be able to create my account and to add my own words to the site.
 * I want to be able to see commonly used words by Irish people through viewing the most popular and/or least popular additions.
 
-# User Stories
+## Registered user stories
+
+* I want to be able to safely and easily log in, log out of the site.
+* I want to be able to edit, terminate the words that I added to the site.
+* I want to be able to see words added by other users of the site.
+* I want to be able to edit, terminate my profile that I created.
+* I want to be able to contact the site's site owner over any query or issue I may have now or in the future.
 
 
-
-# Site Owner Goals
 
 
 
