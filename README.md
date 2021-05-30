@@ -46,7 +46,8 @@
 # User Experience
 
 ## The project Goal  
-
+The goal of this project is to creare a fictional glossary/dictionary website for words that are spoken on a daily basis among Irish people. It is aimed at people who wish to
+visit Ireland in the future and have an interest or an intrigue in words/phrases Irish people use.
 
 
 # User Goals
