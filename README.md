@@ -64,13 +64,17 @@ visit Ireland in the future and have an interest or an intrigue in words/phrases
 
 * I want to be able to safely and easily log in, log out of the site.
 * I want to be able to edit, terminate the words that I added to the site.
-* I want to be able to see words added by other users of the site.
 * I want to be able to edit, terminate my profile that I created.
+* I want to be able to see words added by other users of the site.
 * I want to be able to contact the site's site owner over any query or issue I may have now or in the future.
 
+## Site owner user stories
 
-
-
+* To give site accessibility even if user has not created an account.
+* To give information on the site for its users.
+* To allow users to soley edit, termiante their own additions.
+* To be easily contacted should the user have any problems or concerns.
+* To be able to delete any material added by a registered user which falls under misconduct of site regulations.
 
 # User Requirements and Expectations
 
