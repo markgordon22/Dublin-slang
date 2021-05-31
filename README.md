@@ -3,9 +3,7 @@
 # Table of contents
 - [User Experience](#user-experience)
   * [The project Goal](#the-project-goal)
-- [User Goals](#user-goals)
 - [User Stories](#user-stories)
-- [Site Owner Goals](#site-owner-goals)
 - [User Requirements and Expectations](#user-requirements-and-expectations)
   * [Requirements](#requirements)
   * [Expectations](#expectations)
