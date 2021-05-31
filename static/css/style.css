@@ -42,11 +42,16 @@ display: inline;
 background-color: orange
 }
 
-.contact-form{
-border-radius: 10px;
-border: 1px solid black;
-margin-top: 30px;
+#contact-form{
+border: 2px solid #000000;
+border-radius: 20px;
+background-color: orange;
+margin-top: 20px;
 }
+
+
+
+
 
 
 
