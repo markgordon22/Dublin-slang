@@ -8,11 +8,12 @@ body {
     flex-direction: column;
     font-family: 'Rufina', serif;
     font-weight: 700;
-  }
+    background-color: lightgray;
+}
 
 main {
     flex: 1 0 auto;
-  }
+}
 
 .brand-logo{
  margin-left: 6px;
@@ -33,6 +34,11 @@ font-size: 25px;
 li{
 display: inline;
 }
+
+
+
+
+
 
 
 
