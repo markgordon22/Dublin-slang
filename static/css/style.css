@@ -8,8 +8,10 @@ body {
     flex-direction: column;
     font-family: 'Rufina', serif;
     font-weight: 700;
-    background-color: lightgray;
+    background-color: white;
 }
+
+
 
 main {
     flex: 1 0 auto;
