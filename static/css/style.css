@@ -19,15 +19,13 @@ main {
 
 .brand-logo{
  margin-left: 6px;
+ display: block;
+ margin: auto;
+ letter-spacing: 1px;
 }
 
 nav{
 background-color: #009900;
-}
-
-.brand-logo{
-letter-spacing: 1px;
-
 }
 
 .fab{
@@ -45,8 +43,12 @@ background-color: orange
 #contact-form{
 border: 2px solid #000000;
 border-radius: 20px;
-background-color: orange;
+background-color: rgb(255, 166, 0);
 margin-top: 20px;
+}
+
+input{
+border-bottom: 1px solid black;
 }
 
 
