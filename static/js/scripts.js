@@ -1,6 +1,10 @@
   $(document).ready(function(){
-    $('.sidenav').sidenav({edge: "left"});
-  
+   $('.sidenav').sidenav({edge: "left"});
+   $('.collapsible').collapsible();
+
   });
+
+ 
+
 
   
