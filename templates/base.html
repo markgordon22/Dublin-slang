@@ -11,6 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Rufina&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/integration
+          emailjs.init('user_UnpmT2dUlD0o4aYW4LalX');
+      })();
+    </script>
     {% block styles %}
     {% endblock %}
 <title>Dublin Slang</title>
@@ -18,7 +25,7 @@
 <body>
 	<header>
         <!-- top navbar -->
-		<nav class="nav-extended text-shadow black">
+		<nav class="nav-extended text-shadow green">
 			<div class="nav-wrapper">
                 <a href="{{ url_for('home') }}" class="brand-logo">Irish Slang</a>
                 
@@ -42,7 +49,7 @@
 		</nav>
 
         <!-- mobile sidenav -->
-		<ul class="sidenav text-shadow black" id="mobile-demo">
+		<ul class="sidenav text-shadow green" id="mobile-demo">
             <li><a class="center-align white-text" style="font-size: 30px;" href="{{ url_for('home') }}">Irish Slang</a></li>
             <li><a class="white-text" style="font-size: 20px;" href="{{ url_for('home') }}">Home</a></li>
             {% if session.user %}
@@ -78,7 +85,7 @@
         {% endblock %}
 </main>
 
-        <footer class="page-footer black">
+        <footer class="page-footer green">
           <div class="container" style="min-height: 80px;">
             <div class="row">
               <div class="col l6 s12">
@@ -96,7 +103,7 @@
               </div>
             </div>
           </div>
-           <div class="footer-copyright black" style="text-align: center;">
+           <div class="footer-copyright green" style="text-align: center;">
             <div class="container">
                 © 2021 Created By MGordo
             </div>
@@ -107,7 +114,8 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
-    {% block scripts %}
-    {% endblock %}
+<script src="assets/js/email.js"></script>
+{% block scripts %}
+{% endblock %}
 </body>
 </html>
