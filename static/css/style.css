@@ -11,14 +11,12 @@ body {
     background-color: white;
 }
 
-
-
 main {
     flex: 1 0 auto;
 }
 
 .brand-logo{
- margin-left: 6px;
+ margin-left: 16px;
  display: block;
  margin: auto;
  letter-spacing: 1px;
@@ -45,11 +43,14 @@ border: 2px solid #000000;
 border-radius: 20px;
 background-color: rgb(255, 166, 0);
 margin-top: 20px;
+padding: 10px;
 }
 
 input{
 border-bottom: 1px solid black;
 }
+
+
 
 
 
