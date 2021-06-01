@@ -21,4 +21,9 @@ let params = {
             location.reload();
         }
    );
-   
+
+   return false; //prevents page reloading immediately
+}
+
+
+
