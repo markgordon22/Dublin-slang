@@ -7,3 +7,6 @@ let params = {
         to: document.getElementById("emailaddress").value,
         message: document.getElementById("msg").value
     };
+
+    emailjs.send("service_4b99rtc","template_nllrsno",params)
+   .then(
