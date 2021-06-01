@@ -28,8 +28,15 @@
             Submit
         </button>
 
-       
-      
-      
-   
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/email.js') }}"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/integration
+          emailjs.init('user_UnpmT2dUlD0o4aYW4LalX');
+      })();
+</script>
+{% endblock %}
+
 {% endblock %}
