@@ -1,3 +1,12 @@
+{% block styles %}
+{% endblock %}
+<script src="{{ url_for('static', filename='js/email.js') }}"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_UnpmT2dUlD0o4aYW4LalX");
+})();
+</script>
 {% extends "base.html" %}
 {% block content %}
 <h3 class="center-align mucker">Have a question? pop us a message there Mucker!</h3>
@@ -6,37 +15,25 @@
       <div class="row" id="contact-form">
         <div class="input-field col s12">
         <i class="fas fa-user prefix black-text text-darken-4"></i>
-        <input id="first_name" type="text" class="validate">
-          <label for="first_name" style="color: black;">First Name</label>
+        <input name="fname" type="text" id="fname" class="validate">
+          <label for="fname" style="color: black;">First Name</label>
         </div>
         <div class="input-field col s12">
         <i class="fas fa-user prefix black-text text-darken-4"></i>
-        <input id="last_name" type="text" class="validate">
-          <label for="last_name" style="color: black;">Last Name</label>
+        <input name="lname" type="text" id="lname" class="validate">
+          <label for="lname" style="color: black;">Last Name</label>
         </div>
           <div class="input-field col s12">
          <i class="fas fa-folder-open prefix black-text text-darken-4"></i>
-         <input id="email_address" type="text" class="validate" style="color: black;">
-          <label for="email_address" style="color: black;">Email</label>
+         <input name="emailaddress" type="email" id="emailaddress" class="validate" style="color: black;">
+          <label for="emailaddress" style="color: black;">Email</label>
         </div>
           <div class="input-field col s12">
         <i class="fas fa-pen prefix black-text text-darken-4"></i>
-        <textarea id="msg" class="materialize-textarea"></textarea>
+        <textarea id="msg" name="msg" class="materialize-textarea"></textarea>
           <label for="msg" style="color: black;">Textarea</label>
         </div>
-        <button class="btn white" type="submit">
+        <button class="btn white" type="button" onclick="sendMail()">
             Submit
         </button>
-
-{% block scripts %}
-<script src="{{ url_for('static', filename='js/email.js') }}"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script type="text/javascript">
-      (function() {
-          // https://dashboard.emailjs.com/admin/integration
-          emailjs.init('user_UnpmT2dUlD0o4aYW4LalX');
-      })();
-</script>
-{% endblock %}
-
 {% endblock %}
