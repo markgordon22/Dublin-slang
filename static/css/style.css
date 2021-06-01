@@ -46,9 +46,14 @@ margin-top: 20px;
 padding: 10px;
 }
 
-
-
-
+.btn{
+display: block;
+margin: auto;
+color: #000000;
+background-color: #ffffff;
+border-radius: 5px;
+border: 1px solid #000000;
+}
 
 
 
