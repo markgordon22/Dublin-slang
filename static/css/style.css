@@ -58,9 +58,14 @@ font-size: 23px;
 
 }
 
-input{
-background-color: orange;
+.welcome-image {
+height: 600px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
 }
+
 
 
 
