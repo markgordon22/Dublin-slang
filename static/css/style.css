@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rufina&display=swap');
+
 /*---body and main styling from css materialize so footer will to bottom of page---*/   
 body {
     display: flex;
@@ -79,6 +81,8 @@ background-repeat: no-repeat;
 background-size: cover;
 width: 100%;
 }
+
+
 
 
 
