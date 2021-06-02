@@ -32,7 +32,7 @@
                         <li><a class="white-text" style="font-size: 20px;" href="">Log Out</a></li>
                         <li><a class="white-text" style="font-size: 20px;" href="{{ url_for('contact') }}">Contact</a></li>
                         <li><a class="white-text" style="font-size: 20px;" href="">Log In</a></li>
-                        <li><a class="white-text" style="font-size: 20px;" href="">Register</a></li>
+                        <li><a class="white-text" style="font-size: 20px;" href="{{ url_for('register') }}">Register</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -51,7 +51,7 @@
             {% else %}
                 <li><a class="white-text" style="font-size: 20px;" href="{{ url_for('contact') }}">Contact</a></li>
                 <li><a class="white-text" style="font-size: 20px;" href="">Log In</a></li>
-                <li><a class="white-text" style="font-size: 20px;"href="">Register</a></li>
+                <li><a class="white-text" style="font-size: 20px;" href="{{ url_for('register') }}">Register</a></li>
             {% endif %}
 		</ul>
 	</header>
