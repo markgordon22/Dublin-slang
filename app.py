@@ -22,10 +22,10 @@ def home():
     return render_template("index.html")
 
 
+
 @app.route("/glossary")
 def glossary():
     return render_template("glossary.html")
-
 
 @app.route("/contact")
 def contact():
