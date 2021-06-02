@@ -1,10 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
-<h1 class="center-align">Welcome to Irish Slang!</h1>
+<h3 class="center-align green-text text-darken-3"><u>Welcome to Irish Slang!</u></h3>
+
     <div class="row">
         <div class="col s12">
-            <img src="{{ url_for('static', filename='img/main-image.jpg') }}" class="welcome-image"
-                alt="Irish flag">
+            <p class="center-align content-font green-text text-darken-3">Already Registered? <a href=""
+                    class="green-text text-darken-3">Log In <i class="fas fa-sign-in-alt"></i></a></p>
         </div>
     </div>
+
+    <!-- register link for new users -->
+    <div class="row">
+        <div class="col s12">
+            <p class="center-align content-font">New Here? <a href=""
+                    class="grey-text text-darken-3">Register Account <i class="fas fa-sign-in-alt"></i></a></p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <img src="{{ url_for('static', filename='img/irishflagimage.jpg') }}" class="welcome-image"
+                alt="">
+        </div>
+    </div>
+ 
 {% endblock %}
