@@ -31,12 +31,28 @@ li{
 display: inline;
 }
 
+label{
+color: white;
+}
 
+.register{
+background-color: #ffffff;
+color: black;
+border-radius: 10px;
+border: 1px solid black;
+margin: auto;
+display: block;
+
+}
+
+.register:hover{
+font-size: 17px;
+background-color: #ffffff;
+}
 
 #contact-form{
 border: 2px solid #000000;
 border-radius: 20px;
-background-color: rgb(255, 166, 0);
 margin-top: 20px;
 padding: 10px;
 }
