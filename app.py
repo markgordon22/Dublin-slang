@@ -49,6 +49,17 @@ def login():
                             request.form.get("username")))
                         return redirect(url_for(
                             "profile", username=session["user"]))
+            else:
+                # invalid password match
+                flash("Incorrect Username and/or Password")
+                return redirect(url_for("login"))
+
+        else:
+            # username doesn't exist
+            flash("Incorrect Username and/or Password")
+            return redirect(url_for("login"))
+
+    return render_template("login.html")
           
 
 
@@ -85,9 +96,6 @@ def profile():
 @app.route("/get_categories")
 def get_categories():
     return render_template("")
-
-
-
 
 
 if __name__ == "__main__":
