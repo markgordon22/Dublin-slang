@@ -37,20 +37,6 @@ label{
 color: white;
 }
 
-.register{
-background-color: #ffffff;
-color: black;
-border-radius: 10px;
-border: 1px solid black;
-margin: auto;
-display: block;
-
-}
-
-.register:hover{
-font-size: 17px;
-background-color: #ffffff;
-}
 
 #contact-form{
 border: 2px solid #000000;
@@ -66,12 +52,12 @@ color: #000000;
 background-color: #ffffff;
 border-radius: 8px;
 border: 2px solid #000000;
-font-size: 20px;
+font-size: 16px;
 }
 
 .btn:hover{
-font-size: 23px;
-
+font-size: 20px;
+background-color: #ffffff;
 }
 
 .welcome-image {
@@ -88,6 +74,7 @@ background-color: rgb(255, 166, 0);
 
 .card-panel{
 background-color:rgb(255, 166, 0);
+border-radius: 10px;
 }
 
 .flash-message{
@@ -95,6 +82,21 @@ text-align: center;
 background-color: rgb(255, 166, 0);
 color: #000000;
 }
+
+.profile-card{
+border-radius: 10px;
+}
+
+.add-word-panel{
+margin-bottom: 40px;
+}
+
+
+label{
+color: #000000;
+font-size: 12px;
+}
+
 
 
 
