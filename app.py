@@ -23,13 +23,32 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/glossary")
-def glossary():
-    return render_template("glossary.html")
+@app.route("/get_words")
+def get_words():
+    words = list(mongo.db.words.find())
+    return render_template("get_words.html", words=words)
 
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
+
+
+@app.route("/add_word", methods=["GET", "POST"])
+def add_word():
+    if request.method == "POST":
+        word = {
+            "category_name": request.form.get("category_name"),
+            "word_name": request.form.get("word_name"),
+            "word_defintion": request.form.get("word_definition"),
+            "definition_example": request.form.get("defintion_example"),
+            "created_by": session["user"]
+        }
+        mongo.db.words.insert_one(word)
+        flash("your Word has been added")
+        return redirect(url_for("get_words"))
+
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("add_word.html", categories=categories)
 
 
 
@@ -92,7 +111,6 @@ def register():
 def logout():
     # remove user from session cookie
     flash("You have successfully logged out")
-    session.pop("user")
     return redirect(url_for("login"))
 
 
@@ -104,9 +122,7 @@ def profile(username):
     return render_template("profile.html", username=username)
 
 
-@app.route("/get_categories")
-def get_categories():
-    return render_template("")
+
 
 
 if __name__ == "__main__":
