@@ -27,8 +27,8 @@
 				<ul class="right hide-on-med-and-down">
 					<li><a class="white-text" style="font-size: 15px;" href="{{ url_for('home') }}">Home</a></li>
                         <li><a class="white-text" style="font-size: 15px;" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                        <li><a class="white-text" style="font-size: 15px;" href="{{ url_for('glossary') }}">Glossary</a></li>
-                        <li><a class="white-text" style="font-size: 15px;" href="{{ url_for('glossary') }}">Manage Categories</a></li>
+                        <li><a class="white-text" style="font-size: 15px;" href="{{ url_for('get_words') }}">Glossary</a></li>
+                        <li><a class="white-text" style="font-size: 15px;" href="">Manage Categories</a></li>
                         <li><a class="white-text" style="font-size: 15px;" href="{{ url_for('add_word') }}">add word</a></li>
                         <li><a class="white-text" style="font-size: 15px;" href="{{ url_for('logout') }}">Log Out</a></li>
                         <li><a class="white-text" style="font-size: 15px;" href="{{ url_for('contact') }}">Contact</a></li>
@@ -45,9 +45,9 @@
             {% if session.user %}
                 <li><a class="white-text" style="font-size: 20px;" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                 
-                <li><a class="white-text" style="font-size: 20px;" href="{{ url_for('glossary') }}">Glossary</a></li>
+                <li><a class="white-text" style="font-size: 20px;" href="{{ url_for('get_words') }}">Glossary</a></li>
                 {% if session.user|lower == "admin"|lower %}
-                    <li><a class="white-text" style="font-size: 20px;" href="">Manage Categories</a></li>
+                    <li><a class="white-text" style="font-size: 15px;" href="">Manage Categories</a></li>
                     <li><a class="white-text" style="font-size: 15px;" href="{{ url_for('add_word') }}">add word</a></li>
                 {% endif %}
                 <li><a class="white-text" style="font-size: 20px;"href="{{ url_for('logout') }}">Log Out</a></li>
