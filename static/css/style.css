@@ -82,6 +82,14 @@ background-size: cover;
 width: 100%;
 }
 
+.collapsible-header{
+background-color: rgb(255, 166, 0);
+}
+
+.card-panel{
+background-color:rgb(255, 166, 0);
+}
+
 
 
 
