@@ -5,7 +5,7 @@
 <p class="black-text center-align">
     Add your favourite word or search for a word below!</p>
 
-    <div class="row card-panel orange">
+    <div class="row card-panel">
 <form action="{{ url_for('search') }}" method="POST" class="col s12">
     <div class="row valign-wrapper center-align">
         <div class="input-field col s12">
@@ -26,7 +26,7 @@
     <ul class="collapsible">
         {% for word in words %}
         <li>
-            <div class="collapsible-header orange">
+            <div class="collapsible-header">
                 <div class="col s6">
                     <i class="fas fa-caret-down"></i><strong>{{ word.word_name }}</strong>
                 {% if session.user|lower == word.created_by|lower %}
