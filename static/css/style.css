@@ -5,7 +5,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    font-family: 'Rufina', serif;
+    font-family: 'Sigmar One', cursive;
     font-weight: 700;
     background-color: white;
 }
@@ -19,6 +19,7 @@ main {
  display: block;
  margin: auto;
  letter-spacing: 1px;
+ font-size: 15px;
 }
 
 nav{
@@ -56,7 +57,7 @@ font-size: 16px;
 }
 
 .btn:hover{
-font-size: 20px;
+font-size: 18px;
 background-color: #ffffff;
 }
 
@@ -95,6 +96,16 @@ margin-bottom: 40px;
 label{
 color: #000000;
 font-size: 12px;
+}
+
+.btn-large{
+display: block;
+margin: auto;
+color: #000000;
+background-color: #ffffff;
+border-radius: 8px;
+border: 2px solid #000000;
+font-size: 16px;
 }
 
 
