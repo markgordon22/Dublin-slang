@@ -122,6 +122,11 @@ def profile(username):
     return render_template("profile.html", username=username)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    words = list(mongo.db.words.find({"$text": {"$search": query}}))
+    return render_template("get_words.html", words=words)
 
 
 
