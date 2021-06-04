@@ -14,10 +14,10 @@
             <label for="query" style="color: black;">Search Word</label>
        </div>
 
-        <button type="submit" class="grey btn" style="background-color: grey;margin: 5px;">
+        <button type="submit" class="black btn" style="color: #ffffff;margin: 5px;">
         Search
         </button>
-        <a href="{{ url_for('get_words' )}}" class="white btn" style="background-color: #ffffff;">Reset</a>
+        <a href="{{ url_for('get_words' )}}" class="white btn" style="color: #000000;">Reset</a>
             </div>
         </form>
     </div>
@@ -38,7 +38,7 @@
             </div>
             <div class="collapsible-body orange lighten-5">
                 <strong></strong>category: {{ word.category_name }}</strong>
-                <p>{{ word.word_defintion }}</p>
+                <p>definition: {{ word.word_defintion }}</p>
                 <p><em>created by: {{ word.created_by }}</em></p>
             </div>
         </li>
