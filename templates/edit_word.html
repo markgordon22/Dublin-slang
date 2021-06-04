@@ -12,6 +12,11 @@
         <option value="" disabled>Choose Category</option>
         {% for category in categories %}
             {% if category.category_name == word.category_name %}
+              <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+            {% else %}
+            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+            {% endif %}
+            {% endfor %}
 
 
 
