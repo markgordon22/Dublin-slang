@@ -30,5 +30,8 @@
             <div class="collapsible-header orange">
                 <div class="col s6">
                     <i class="fas fa-caret-down"></i>
-
+                 {% if session.user|lower == word.created_by|lower %}
+                        <a href="" class="btn-small black">Done</a>
+                        <a href="" class="btn-small white">Edit</a>
+                {% endif %}
 {% endblock %}
