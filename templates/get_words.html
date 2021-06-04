@@ -22,16 +22,19 @@
         </form>
     </div>
 
-
     {% if words|length > 0 %}
-        <ul class="collapsible">
+    <ul class="collapsible">
         {% for word in words %}
         <li>
             <div class="collapsible-header orange">
                 <div class="col s6">
                     <i class="fas fa-caret-down"></i>
-                 {% if session.user|lower == word.created_by|lower %}
+                    {% if session.user|lower == word.created_by|lower %}
                         <a href="" class="btn-small black">Done</a>
                         <a href="" class="btn-small white">Edit</a>
-                {% endif %}
+                    {% endif %}
+                </div>
+                <div class="col s6">
+                    <strong>{{ word.word_name }}</strong>
+                </div>
 {% endblock %}
