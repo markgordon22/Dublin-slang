@@ -18,10 +18,51 @@
             {% endif %}
             {% endfor %}
             </select>
-            	<label for="category_name">Word Category</label>
+            	<label for="category_name" style="color: black;">Word Category</label>
 				</div>
-			</div>
-			
+            </div>
+            
+		       <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-pencil-alt prefix black-text"></i>
+                    <input id="word_name" name="word_name" minlength="2" maxlength="30" type="text" class="validate" required>
+                        <label for="word_name" style="color: #000000;">Word</label>
+                           </div>
+                              </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix black-text"></i>
+                    <textarea id="word_definition" name="word_definition" minlength="3" maxlength="150"
+                            class="materialize-textarea validate" required>
+                         {{- word.word_definition -}}
+                        </textarea>
+                        <label for="word_definition" style="color:#000000">Definition</label>
+                    </div>
+                </div>
+
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-comment prefix black-text"></i>
+                    <textarea id="definition_example" name="defintion_example" minlength="5" maxlength="250"
+                            class="materialize-textarea validate" required>
+                       
+                        </textarea>
+                        <label for="definition_example" style="color: #000000;">Example</label>
+                    </div>
+        </div>
+         
+                 <div class="row">
+                    <div class="col s12 center-align">
+                        <button type="submit" class="btn-large btn">
+                            Add Word
+                        </button>
+                        <a href="{{ url_for('get_words') }}" class="btn btn-large" style="width: 149px;font-family: 'Rufina', serif;margin-top: 7px;">
+                            Cancel 
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
 
 
 
