@@ -4,7 +4,7 @@
 <h3 class="black-text center-align">Irish Glossary</h3>
 <p class="black-text center-align">
     Add your favourite word or search for a word below!</p>
-<div class="container">
+
     <div class="row card-panel orange">
 <form action="{{ url_for('search')}}" method="POST" class="col s12">
     <div class="row valign-wrapper center-align">
@@ -18,5 +18,12 @@
         Search
         </button>
         <a href="{{ url_for('get_words' )}}" class="white btn" style="background-color: #ffffff;">Reset</a>
+            </div>
+        </form>
+    </div>
+
+
+    {% if words|length > 0 %}
+
 
 {% endblock %}
