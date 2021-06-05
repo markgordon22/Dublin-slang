@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
         integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rufina&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     
@@ -28,7 +28,7 @@
 					<li><a class="white-text" style="font-size: 15px;" href="{{ url_for('home') }}">Home</a></li>
                         <li><a class="white-text" style="font-size: 15px;" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                         <li><a class="white-text" style="font-size: 15px;" href="{{ url_for('get_words') }}">Glossary</a></li>
-                        <li><a class="white-text" style="font-size: 15px;" href="">Manage Categories</a></li>
+                        <li><a class="white-text" style="font-size: 15px;" href="{{ url_for('categories') }}">Manage Categories</a></li>
                         <li><a class="white-text" style="font-size: 15px;" href="{{ url_for('add_word') }}">add word</a></li>
                         <li><a class="white-text" style="font-size: 15px;" href="{{ url_for('logout') }}">Log Out</a></li>
                         <li><a class="white-text" style="font-size: 15px;" href="{{ url_for('contact') }}">Contact</a></li>
@@ -40,14 +40,14 @@
 
         <!-- mobile sidenav -->
 		<ul class="sidenav text-shadow green" id="mobile-demo">
-            <li><a class="center-align white-text" style="font-size: 30px;" href="{{ url_for('home') }}">Irish Slang</a></li>
+            <li><a class="center-align white-text" href="{{ url_for('home') }}">Irish Slang</a></li>
             <li><a class="white-text" style="font-size: 20px;" href="{{ url_for('home') }}">Home</a></li>
             {% if session.user %}
                 <li><a class="white-text" style="font-size: 20px;" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                 
                 <li><a class="white-text" style="font-size: 20px;" href="{{ url_for('get_words') }}">Glossary</a></li>
                 {% if session.user|lower == "admin"|lower %}
-                    <li><a class="white-text" style="font-size: 15px;" href="">Manage Categories</a></li>
+                    <li><a class="white-text" style="font-size: 15px;" href="{{ url_for('categories') }}">Manage Categories</a></li>
                     <li><a class="white-text" style="font-size: 15px;" href="{{ url_for('add_word') }}">add word</a></li>
                 {% endif %}
                 <li><a class="white-text" style="font-size: 20px;"href="{{ url_for('logout') }}">Log Out</a></li>
