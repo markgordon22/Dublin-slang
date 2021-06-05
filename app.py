@@ -129,6 +129,11 @@ def search():
     return render_template("get_words.html", words=words)
 
 
+@app.route("/edit_word/<word_id>", methods=["GET", "POST"])
+
+
+
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
