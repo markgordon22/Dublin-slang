@@ -147,6 +147,12 @@ def edit_word(word_id):
     return render_template("edit_word.html", word=word, categories=categories)
 
 
+@app.route("/delete_word/<word_id>")
+def delete_word(word_id):
+    mongo.db.words.remove({"_id": ObjectId(word_id)})
+    flash("word Successfully Deleted!")
+    return redirect(url_for("get_words"))
+
 
 
 if __name__ == "__main__":
