@@ -130,7 +130,7 @@ def search():
 
 
 @app.route("/edit_word/<word_id>", methods=["GET", "POST"])
-
+def edit_word(word_id):
 
 
 
