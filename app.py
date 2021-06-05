@@ -142,6 +142,10 @@ def edit_word(word_id):
         mongo.db.word.update({"_id": ObjectId(word_id)}, edit_submission)
         flash("word Successfully Updated!")
 
+    word = mongo.db.words.find_one({"_id": ObjectId(word_id)})
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("edit_word.html", word=word, categories=categories)
+
 
 
 
