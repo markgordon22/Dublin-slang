@@ -39,8 +39,8 @@ def add_word():
         word = {
             "category_name": request.form.get("category_name"),
             "word_name": request.form.get("word_name"),
-            "word_defintion": request.form.get("word_definition"),
-            "definition_example": request.form.get("defintion_example"),
+            "word_def": request.form.get("word_def"),
+            "definition_example": request.form.get("definition_example"),
             "created_by": session["user"]
         }
         mongo.db.words.insert_one(word)
@@ -135,8 +135,8 @@ def edit_word(word_id):
         edit_submission = {
             "category_name": request.form.get("category_name"),
             "word_name": request.form.get("word_name"),
-            "word_definition": request.form.get("word_definition"),
-            "word_example": request.form.get("word_example"),
+            "word_def": request.form.get("word_def"),
+            "definition_example": request.form.get("definition_example"),
             "created_by": session["user"]
         }
         mongo.db.word.update({"_id": ObjectId(word_id)}, edit_submission)
