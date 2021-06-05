@@ -131,6 +131,14 @@ def search():
 
 @app.route("/edit_word/<word_id>", methods=["GET", "POST"])
 def edit_word(word_id):
+    if request.method == "POST":
+        edit_submission = {
+            "category_name": request.form.get("category_name"),
+            "word_name": request.form.get("tword_name"),
+            "word_definition": request.form.get("word_definition"),
+            "word_example": request.form.get("word_example"),
+            "created_by": session["user"]
+        }
 
 
 
