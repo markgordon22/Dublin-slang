@@ -153,6 +153,11 @@ def delete_word(word_id):
     flash("word Successfully Deleted!")
     return redirect(url_for("get_words"))
 
+@app.route("/categories")
+def categories():
+    categories = list(mongo.db.categories.find().sort("category_name", 1))
+    return render_template("categories.html", categories=categories)
+
 
 
 if __name__ == "__main__":
