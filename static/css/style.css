@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Rufina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 /*---body and main styling from css materialize so footer will to bottom of page---*/   
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    font-family: 'Sigmar One', cursive;
+    font-family: 'Abril Fatface', cursive;
     font-weight: 700;
     background-color: white;
+    letter-spacing: 1px;
 }
 
 main {
@@ -24,6 +25,10 @@ main {
 
 nav{
 background-color: #009900;
+}
+
+.nav-link{
+font-size: 20px;
 }
 
 .fab{
@@ -91,7 +96,6 @@ border-radius: 10px;
 .add-word-panel{
 margin-bottom: 40px;
 }
-
 
 label{
 color: #000000;
