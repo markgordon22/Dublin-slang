@@ -106,12 +106,13 @@ def register():
 
     return render_template("register.html")
 
-
 @app.route("/logout")
 def logout():
-    # remove user from session cookie
-    flash("You have successfully logged out")
+    # remove user from session cookies
+    flash("You have been logged out. Haere Ra!")
+    session.pop("user")
     return redirect(url_for("login"))
+
 
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
@@ -157,7 +158,6 @@ def delete_word(word_id):
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
-
 
 
 if __name__ == "__main__":
