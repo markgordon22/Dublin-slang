@@ -1,27 +1,27 @@
 <!-- modal: confirm task deletion -->
-{% if task %}
-<div id="modal-{{ task._id }}" class="modal black white-text">
+{% if word %}
+<div id="modal-{{ word._id }}" class="modal">
     <div class="modal-content">
-        <h4>Are you sure you want to delete this task?</h4>
-        <p>This action cannot be undone.</p>
+        <h4>Are you sure you want to delete this word?</h4>
+        <p>Once deleted it's gone forever.</p>
     </div>
-    <div class="modal-footer black">
-        <a class="btn red modal-close">No</a>
-        <a href="{{ url_for('delete_task', task_id=task._id) }}" class="btn green accent-4">Yes</a>
+    <div class="modal-footer">
+        <a class="btn no-button modal-close">No</a>
+        <a href="{{ url_for('delete_word', word_id=word._id) }}" class="btn yes-button">Yes</a>
     </div>
 </div>
 {% endif %}
 
 <!-- modal: confirm category deletion -->
 {% if category %}
-<div id="modal-{{ category._id }}" class="modal black white-text">
+<div id="modal-{{ category._id }}" class="modal">
     <div class="modal-content">
         <h4>Are you sure you want to delete this category?</h4>
-        <p>This action cannot be undone.</p>
+        <p>Once deleted it's gone forever.</p>
     </div>
     <div class="modal-footer black">
-        <a class="btn red modal-close">No</a>
-        <a href="{{ url_for('delete_category', category_id=category._id) }}" class="btn green accent-4">Yes</a>
+        <a class="btn no-button modal-close">No</a>
+        <a href="{{ url_for('delete_category', category_id=category._id) }}" class="btn yes-button">Yes</a>
     </div>
 </div>
 {% endif %}
