@@ -119,6 +119,10 @@ margin: auto;
 width: 200px;
 }
 
+.card{
+height: 200px;
+}
+
 .category-card{
 background-color: rgb(255, 166, 0);
 color: #000000;
@@ -126,26 +130,31 @@ border-radius: 10px;
 }
 
 .modal{
-height: 250px;
+height: 280px;
 border-radius: 10px;
 }
 
-.no-button{
-display: block;
-margin: auto;
-width: 200px;
-background-color: #000000;
-color: #ffffff;
+
+.btn-small{
+padding: 5px;
+border-radius: 8px;
+height: 45px;
+text-align: center;
+margin: 2px;
+cursor: pointer;
+width: 80px;
+font-size: 15px;
 }
 
-.yes-button{
-display: block;
-margin: auto;
-width: 200px;
-background-color: #ffffff;
-color: #000000;
-text-align: center;
+.btn-small:hover{
+font-size: 16px;
 }
+
+
+
+
+
+
 
 
 
