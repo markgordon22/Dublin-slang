@@ -2,7 +2,7 @@
 {% if word %}
 <div id="modal-{{ word._id }}" class="modal">
     <div class="modal-content center-align">
-        <h4>Are you sure you want to delete this word?</h4>
+        <h4>Are you sure you want to delete {{ word.word_name }} ?</h4>
         <p>Once deleted it's gone forever.</p>
     </div>
     <div class="modal-footer center-align" style="text-align: center;">
@@ -16,7 +16,7 @@
 {% if category %}
 <div id="modal-{{ category._id }}" class="modal">
     <div class="modal-content center-align">
-        <h4>Are you sure you want to delete this category?</h4>
+        <h4>Are you sure you want to delete the {{ word.category_name }} category?</h4>
         <p>Once deleted it's gone forever.</p>
     </div>
     <div class="modal-footer">
