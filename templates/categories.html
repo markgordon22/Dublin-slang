@@ -16,10 +16,10 @@
             <div class="col s12 m3">
                 <div class="card category-card center-align">
                     <div class="card-content black-text">
-                        <span class="card-title">{{ category.category_name }}</span>
+                        <span class="card-title category-title">{{ category.category_name }}</span>
                     </div>
                     <div class="card-action">
-                        <a href="{{ url_for('edit_category', category_id=category._id) }}" class="btn-small white black-text">Edit</a>
+                        <a href="{{ url_for('edit_category', category_id=category._id) }}" class="btn-small  white black-text">Edit</a>
                         <a href="#modal-{{ category._id }}" class="btn-small black white-text modal-trigger">Delete</a>
                         {% include "partials/modals.html" %}
                     </div>
