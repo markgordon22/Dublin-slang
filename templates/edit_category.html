@@ -4,7 +4,7 @@
     <h3 class="black-text center-align">Edit Category</h3>
 
     <div class="row card-panel">
-        <form class="col s12 m12 l12" method="POST" action="{{ url_for('edit_category', category_id=category._id) }}">
+        <form class="col s12" method="POST" action="{{ url_for('edit_category', category_id=category._id) }}">
             <!-- category name -->
             <div class="row">
                 <div class="input-field col s12 m12 l12">
@@ -17,10 +17,10 @@
             <!-- submit button -->
             <div class="row">
                 <div class="col s12 center-align">
-                    <button href="{{ url_for('get_categories') }}" class="btn white black-text">
+                    <button href="{{ url_for('get_categories') }}" class="btn-small white black-text">
                         Cancel <i class="fas fa-times-circle right"></i>
                     </button>
-                    <button type="submit" class="btn black white-text">
+                    <button type="submit" class="btn-small black white-text">
                         Edit Category <i class="fas fa-edit right"></i>
                     </button>
                 </div>
