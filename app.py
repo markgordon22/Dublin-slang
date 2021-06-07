@@ -109,7 +109,7 @@ def register():
 @app.route("/logout")
 def logout():
     # remove user from session cookies
-    flash("You have been logged out. Haere Ra!")
+    flash("You have been logged out. See ye after pal!")
     session.pop("user")
     return redirect(url_for("login"))
 
@@ -154,10 +154,41 @@ def delete_word(word_id):
     flash("word Successfully Deleted!")
     return redirect(url_for("get_words"))
 
-@app.route("/get_categories")
-def get_categories():
-    categories = list(mongo.db.categories.find().sort("category_name", 1))
-    return render_template("categories.html", categories=categories)
+
+
+
+@app.route("/add_category", methods=["GET", "POST"])
+def add_category():
+    if request.method == "POST":
+        category = {
+            "category_name": request.form.get("category_name")
+        }
+        mongo.db.categories.insert_one(category)
+        flash("New Category has been Added")
+        return redirect(url_for("get_categories"))
+
+    return render_template("add_category.html")
+
+
+@app.route("/edit_category/<category_id>", methods=["GET", "POST"])
+def edit_category(category_id):
+    if request.method == "POST":
+        send = {
+            "category_name": request.form.get("category_name")
+        }
+        mongo.db.categories.update({"_id": ObjectId(category_id)}, send)
+        flash("Category has been updated")
+        return redirect(url_for("get_categories"))
+
+    category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})
+    return render_template("edit_category.html", category=category)
+
+
+@app.route("/delete_category/<category_id>")
+def delete_category(category_id):
+    mongo.db.categories.remove({"_id": ObjectId(category_id)})
+    flash("Category has been deleted")
+    return redirect(url_for("get_categories"))
 
 
 if __name__ == "__main__":
