@@ -2,6 +2,8 @@
    $('.sidenav').sidenav({edge: "left"});
    $('.collapsible').collapsible();
    $('select').formSelect();
+    $('.modal').modal();
+   
 
 
   });
