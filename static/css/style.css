@@ -122,7 +122,32 @@ width: 200px;
 .category-card{
 background-color: rgb(255, 166, 0);
 color: #000000;
+border-radius: 10px;
 }
+
+.modal{
+height: 250px;
+border-radius: 10px;
+}
+
+.no-button{
+display: block;
+margin: auto;
+width: 200px;
+background-color: #000000;
+color: #ffffff;
+}
+
+.yes-button{
+display: block;
+margin: auto;
+width: 200px;
+background-color: #ffffff;
+color: #000000;
+text-align: center;
+}
+
+
 
 
 
