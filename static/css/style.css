@@ -118,6 +118,7 @@ font-family: 'Sigmar One', cursive;
 display: block;
 margin: auto;
 width: 200px;
+background-color: rgb(255, 166, 0);
 }
 
 
@@ -140,16 +141,51 @@ border-radius: 8px;
 height: 45px;
 text-align: center;
 cursor: pointer;
-font-size: 12px;
+font-size: 14px;
 }
 
 .btn-small:hover{
-font-size: 13px;
+font-size: 15px;
+background-color: rgb(255, 166, 0);
 }
 
 .modal-footer{
 text-align: center;
 }
+
+.add-word{
+display: block;
+margin: auto;
+font-size: 31px;
+font-weight: 300;
+letter-spacing: 1px;
+opacity: 0.7;
+color: #000000;
+padding: 7px;
+}
+
+.add-word:hover{
+font-size: 32px;
+
+}
+
+.contact-us{
+display: block;
+margin: auto;
+font-size: 31px;
+font-weight: 300;
+letter-spacing: 1px;
+opacity: 0.7;
+color: #000000;
+padding: 7px;
+}
+
+.contact-us:hover{
+font-size: 32px;
+}
+
+
+
 
 
 
