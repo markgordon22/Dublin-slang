@@ -76,6 +76,7 @@ width: 100%;
 
 .collapsible-header{
 background-color: rgb(255, 166, 0);
+min-height: 70px;
 }
 
 .card-panel{
@@ -138,13 +139,12 @@ padding: 7px;
 border-radius: 8px;
 height: 45px;
 text-align: center;
-margin: 2px;
 cursor: pointer;
-font-size: 15px;
+font-size: 12px;
 }
 
 .btn-small:hover{
-font-size: 16px;
+font-size: 13px;
 }
 
 .modal-footer{
