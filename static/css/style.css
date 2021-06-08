@@ -189,6 +189,19 @@ a.white.btn.btn-reset{
 margin-left: 4px;
 }
 
+.add-word-button{
+display: block;
+margin: auto;
+width: 130px;
+
+}
+
+.contact-us-button{
+display: block;
+margin: auto;
+width: 130px;
+margin-top: 10px;
+}
 
 
 
