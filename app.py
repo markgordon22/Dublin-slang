@@ -106,6 +106,7 @@ def register():
 
     return render_template("register.html")
 
+
 @app.route("/logout")
 def logout():
     # remove user from session cookies
@@ -114,13 +115,19 @@ def logout():
     return redirect(url_for("login"))
 
 
-
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
-    # grab the session user's username from db
+    # grab session user's username from database
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    return render_template("profile.html", username=username)
+    # finds the slang words added by the session user:
+    words = list(mongo.db.words.find())
+    # if existing user display profile
+    if session["user"]:
+        return render_template("profile.html",
+                                username=username, words=words)
+
+    return redirect(url_for("login"))
 
 
 @app.route("/search", methods=["GET", "POST"])
