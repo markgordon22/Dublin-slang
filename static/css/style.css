@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
 /*---body and main styling from css materialize so footer will to bottom of page---*/   
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Mate SC', serif;
     font-weight: 700;
     background-color: white;
     letter-spacing: 1px;
@@ -130,8 +129,9 @@ border-radius: 10px;
 
 
 .modal{
-height: 280px;
+height: 320px;
 border-radius: 10px;
+background-color: rgb(255, 166, 0);
 }
 
 
@@ -150,8 +150,14 @@ font-size: 15px;
 background-color: rgb(255, 166, 0);
 }
 
-.modal-footer{
+div.modal-footer.center-align{
 text-align: center;
+background-color: rgb(255, 166, 0);
+}
+
+
+.modal-content{
+background-color: rgb(255, 166, 0);
 }
 
 .add-word{
@@ -193,7 +199,7 @@ margin-left: 4px;
 display: block;
 margin: auto;
 width: 130px;
-
+margin-bottom: 30px;
 }
 
 .contact-us-button{
@@ -202,6 +208,18 @@ margin: auto;
 width: 130px;
 margin-top: 10px;
 }
+
+.footer-link{
+display: block;
+font-size: 20px;
+font-weight: 100;
+letter-spacing: 1px;
+}
+
+
+
+
+
 
 
 
