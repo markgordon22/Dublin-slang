@@ -228,6 +228,11 @@ margin-top: 10px;
 margin-top: 10px;
 }
 
+ul.collapsible{
+margin: 0px;
+padding: 0px;
+text-shadow: none;
+}
 
 
 
