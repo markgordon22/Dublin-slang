@@ -28,6 +28,7 @@ background-color: #009900;
 
 .nav-link{
 font-size: 20px;
+color: #ffffff;
 }
 
 .fab{
@@ -71,6 +72,7 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 width: 100%;
+opacity: 0.9;
 }
 
 .collapsible-header{
@@ -232,6 +234,10 @@ ul.collapsible{
 margin: 0px;
 padding: 0px;
 text-shadow: none;
+}
+
+.headings-container{
+margin-top: 25px;
 }
 
 
