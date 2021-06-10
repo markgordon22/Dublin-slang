@@ -130,6 +130,18 @@ def profile(username):
     return redirect(url_for("login"))
 
 
+@app.route("/delete_profile")
+def delete_profile():
+    if 'user' not in session:
+        return redirect(url_for("login"))
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+    mongo.db.users.delete_one({"username": username})
+    flash("Profile successfully deleted. Goodbye mate :(")
+    session.pop("user")
+    return render_template("register.html", username=username)
+
+
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
