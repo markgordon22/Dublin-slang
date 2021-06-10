@@ -42,15 +42,22 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container headings-container">
     <div class="row">
-        <div class="col s12 m6">
-            <h4 class="center-align">Go ahead and a your own word!</h4>
+        <div class="col s12 m4">
+            <h5 class="center-align">Go ahead and a your own word there!</h5>
             <a href="{{ url_for('add_word') }}" class="btn-small add-word-button center-align"><u>add a word!</u></a>
             </div>
-            <div class="col s12 m6">
-            <h4 class="center-align">Have a question? then contact us then chief!</h4>
+            <div class="col s12 m4">
+            <h5 class="center-align">Have a question? then contact us then chief!</h5>
             <a href="{{ url_for('contact') }}" class="btn-small add-word-button center-align"><u>contact us!</u></a>
+            </div>
+            <div class="col s12 m4">
+            <h5 class="center-align">click below to delete your profile :(</h5>
+            <a href="#modal1" class="btn-small add-word-button center-align modal-trigger" data-target="{{ username._id }}"><i
+            class="fas fa-trash-alt"></i>
+            Delete Profile</a>
+            {% include "partials/modals.html" %}
             </div>
         </div>
     </div>
