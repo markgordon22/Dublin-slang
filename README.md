@@ -1,6 +1,6 @@
 # Irish Slang
 
-![image](wireframes/mockup.png)
+![image](wireframes/mockupimg.png)
 
 # Table of contents
 - [User Experience](#user-experience)
