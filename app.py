@@ -134,6 +134,21 @@ def login():
     return redirect(url_for("profile", username=session["user"]))
 
 
+@app.route("/profile/<username>", methods=["GET", "POST"])
+@login_required
+def profile(username):
+    # grab only the session["user"] profile
+    if session["user"].lower() == username.lower():
+        # find the session["user"] record
+        username = mongo.db.users.find_one({"username": username})
+        # display only the words by this session["user"]
+        words = list(mongo.db.words.find({"created_by": username}))
+        return render_template("profile.html", username=username, words=words)
+
+    # take the incorrect user to their own profile
+    return redirect(url_for("profile", username=session["user"]))
+
+
 
 
 @app.route("/delete_profile")
