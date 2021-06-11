@@ -247,12 +247,12 @@ margin-top: 25px;
 
 .login-link{
 margin-bottom: 0px;
-font-size: 20px;
+font-size: 25px;
 }
 
 .register-link{
 margin-top: 0px;
-font-size: 20px;
+font-size: 25px;
 }
 
 .login-button{
@@ -263,11 +263,25 @@ font-family: 'Mate SC', serif;
 width: 200px;
 }
 
-@media only screen and (max-width: 321px) {
+@media only screen and (max-width: 320px) {
   a.brand-logo {
     font-size: 25px;
   }
 }
+
+
+@media only screen and (min-width: 375px) {
+  a.brand-logo {
+    font-size: 29px;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  a.brand-logo {
+    font-size: 35px;
+  }
+}
+
 
 
 
