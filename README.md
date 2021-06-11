@@ -1,5 +1,7 @@
 # Irish Slang
 
+![image](wireframes/mockupimage.png)
+
 # Table of contents
 - [User Experience](#user-experience)
   * [The project Goal](#the-project-goal)
@@ -101,6 +103,8 @@ visit Ireland in the future and have an interest or an intrigue in words/phrases
 
 
 ## typography
+
+
 
 
 
