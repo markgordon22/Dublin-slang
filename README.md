@@ -104,10 +104,8 @@ visit Ireland in the future and have an interest or an intrigue in words/phrases
 
 ## typography
 
-* [Google Fonts](https://fonts.google.com/) was used for the site. The font family adopted  was  Mate SC as I felt it was an attractive, readbale and eligible font to use.
-
-
-
+* [Google Fonts](https://fonts.google.com/) was used for the site. The font family adopted  was  Mate SC as I felt it was an attractive, readbale and eligible font to use. In case Mate SC did not
+  load sans serif was used as the back up font.
 
 
 ## Icons
