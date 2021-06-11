@@ -14,12 +14,13 @@
       <div class="container">
         <h4 class="black-text center-align">Below is the slang you've added mate!:</h4>
         <!--Logged in user and site owner can edit or delete added words-->
-        {% for word in words if session.user == word.created_by %}
+        {% for word in words if session["user"] == word.created_by  %}
+        
         <ul class="collapsible">
             <li>
                 <div class="collapsible-header white-text">
                     <i class="fas fa-caret-down black-text"></i><strong class="black-text">{{ word.word_name }}</strong>
-                    <a href="#modal-{{ word._id }}" class="btn-small black white-text modal-trigger" style="margin-left: 4px;">Delete</a>
+                    <a href="#modal-{{ word._id }}" class="btn-small black white-text modal-trigger">Delete</a>
                     <a href="{{ url_for('edit_word', word_id=word._id) }}"
                         class="btn-small white black-text" style="margin-left: 4px;">Edit</a>
                     {% include "partials/modals.html" %}
@@ -44,15 +45,15 @@
 
 <div class="container headings-container">
     <div class="row">
-        <div class="col s12 m4">
+        <div class="col s12">
             <h5 class="center-align">Go ahead and a your own word there!</h5>
             <a href="{{ url_for('add_word') }}" class="btn-small add-word-button center-align"><u>add a word!</u></a>
             </div>
-            <div class="col s12 m4">
+            <div class="col s12 m6">
             <h5 class="center-align">Have a question? then contact us then chief!</h5>
             <a href="{{ url_for('contact') }}" class="btn-small add-word-button center-align"><u>contact us!</u></a>
             </div>
-            <div class="col s12 m4">
+            <div class="col s12 m6">
             <h5 class="center-align">click below to delete your profile :(</h5>
             <a href="#modal1" class="btn-small add-word-button center-align modal-trigger" data-target="{{ username._id }}"><i
             class="fas fa-trash-alt"></i>
@@ -62,4 +63,5 @@
         </div>
     </div>
 </div>
+
 {% endblock %}
