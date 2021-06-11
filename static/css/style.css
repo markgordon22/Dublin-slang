@@ -263,12 +263,6 @@ font-family: 'Mate SC', serif;
 width: 200px;
 }
 
-@media only screen and (max-width: 321px) {
-  a.brand-logo {
-    font-size: 25px;
-  }
-}
-
 
 
 
