@@ -5,18 +5,19 @@
         <div class="col s12 m8 offset-m2">
             <div class="card-panel profile-card">
                 <h3 class="center-align black-text">
-                    {{ username.username }}'s Profile
+                    {{ username }}'s Profile
                 </h3>
             </div>
         </div>
     </div>
-
+     
       <div class="container">
         <h4 class="black-text center-align">Below is the slang you've added mate!:</h4>
         <!--Logged in user and site owner can edit or delete added words-->
-        {% for word in words if session["user"] == word.created_by  %}
         
         <ul class="collapsible">
+            {% for word in words %}
+            {% if session.user == word.created_by %}
             <li>
                 <div class="collapsible-header white-text">
                     <i class="fas fa-caret-down black-text"></i><strong class="black-text">{{ word.word_name }}</strong>
@@ -28,7 +29,7 @@
                 <div class="collapsible-body orange lighten-4">
                     <strong><em>Category: </em></strong>{{ word.category_name}}
                     <p><strong><em>Definition: </em></strong>{{ word.word_name }}</p>
-                    <p><strong><em>Example: </em></strong>{{ word.word_example }}</p>
+                    <p><strong><em>Example: </em></strong>{{ word.definition_example }}</p>
                     <p><strong><em>by: {{ word.created_by }}</em></strong></p>
                     </div>
                </li>
@@ -38,6 +39,7 @@
                     Wait a sec you've not added a word mate!
                 </h3>
             </div>
+            {% endif %}
             {% endfor %}
         </ul>
     </div>
