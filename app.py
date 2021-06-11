@@ -1,7 +1,8 @@
 import os
+from functools import wraps
 from flask import (
     Flask, flash, render_template,
-    redirect, request, session, url_for)
+    redirect, g, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -14,7 +15,10 @@ app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
 
-mongo  = PyMongo(app)
+mongo = PyMongo(app)
+
+
+
 
 
 @app.route("/")
@@ -27,6 +31,7 @@ def home():
 def get_words():
     words = list(mongo.db.words.find())
     return render_template("get_words.html", words=words)
+
 
 @app.route("/contact")
 def contact():
@@ -50,37 +55,7 @@ def add_word():
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_word.html", categories=categories)
 
-
-
-@app.route("/login", methods=["GET", "POST"])
-def login():
-    if request.method == "POST":
-        # check if username exists in db
-        existing_user = mongo.db.users.find_one(
-            {"username": request.form.get("username").lower()})
-
-        if existing_user:
-            # ensure hashed password matches user input
-            if check_password_hash(
-                    existing_user["password"], request.form.get("password")):
-                        session["user"] = request.form.get("username").lower()
-                        flash("Welcome, {}".format(
-                            request.form.get("username")))
-                        return redirect(url_for(
-                            "profile", username=session["user"]))
-            else:
-                # invalid password match
-                flash("Incorrect Username and/or Password")
-                return redirect(url_for("login"))
-
-        else:
-            # username doesn't exist
-            flash("Incorrect Username and/or Password!")
-            return redirect(url_for("login"))
-
-    return render_template("login.html")
           
-
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -115,19 +90,7 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/profile/<username>", methods=["GET", "POST"])
-def profile(username):
-    # grab session user's username from database
-    username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
-    # finds the slang words added by the session user:
-    words = list(mongo.db.words.find())
-    # if existing user display profile
-    if session["user"]:
-        return render_template("profile.html",
-                                username=username, words=words)
 
-    return redirect(url_for("login"))
 
 
 @app.route("/delete_profile")
@@ -172,6 +135,7 @@ def delete_word(word_id):
     mongo.db.words.remove({"_id": ObjectId(word_id)})
     flash("word Successfully Deleted!")
     return redirect(url_for("get_words"))
+
 
 @app.route("/get_categories")
 def get_categories():
