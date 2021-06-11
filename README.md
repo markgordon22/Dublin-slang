@@ -61,8 +61,8 @@ visit Ireland in the future and have an interest or an intrigue in words/phrases
 ## Registered user stories
 
 * I want to be able to safely and easily log in, log out of the site.
-* I want to be able to edit, terminate the words that I added to the site.
-* I want to be able to edit, terminate my profile that I created.
+* I want to be able to edit, delete the words that I added to the site.
+* I want to be able to edit, delete my profile that I created.
 * I want to be able to see words added by other users of the site.
 * I want to be able to contact the site's site owner over any query or issue I may have now or in the future.
 
@@ -78,7 +78,11 @@ visit Ireland in the future and have an interest or an intrigue in words/phrases
 
 ## Requirements
 
-
+* To navigate around the site in an easy fashion with no broken internal links
+* All features such as login, register, contact form, collapsible and card-panels to be operating efficentley
+* All text content to eligible, readbale and viewable across different devices such as desktop, tablet and mobile.
+* for website to have a high level of safety and security when user is logged in the copied url once pasted when the
+  url has logged out will be redirected back to the log in page.
 
 ## Expectations
 
