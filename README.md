@@ -86,6 +86,10 @@ visit Ireland in the future and have an interest or an intrigue in words/phrases
 
 ## Expectations
 
+* Navigation of the website is working appropriatley efficentley with no broken internal links.
+* All features in above in requirements section is working appropriatley.
+* Interactive features of the website are all working with no faults or errors.
+* All text is easily viewable on all devices along with imagery with no stretching on any device.
 
 
 # Design Choices
