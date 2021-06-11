@@ -88,12 +88,16 @@ visit Ireland in the future and have an interest or an intrigue in words/phrases
 
 * Navigation of the website is working appropriatley efficentley with no broken internal links.
 * All features in above in requirements section is working appropriatley.
-* Interactive features of the website are all working with no faults or errors.
-* All text is easily viewable on all devices along with imagery with no stretching on any device.
-
+* Text content is easy to read,view across all devices
+* Website is highly secured with user's profile secured against intrusion from other users, vistors to the site.
 
 # Design Choices
 
+* Considering this is an Irish slang dinctionary I wanted the color scheme to adopt the tricolor flag colors of Ireland which is green, white and orange.
+  The feeling was that it was the most appropriate design choice of colors as users will instantly feel the connection between the Irish tricolors and the slang glossary.
+  An image of a leprachaun is present on the homepage to offer imagery but to also offer a well reknowned representation of Irish fiction.
+  Features such as login, register, contact form, search bar and collapsible glossary are styled identically for consistency in design. Collapsible, footer,buttons and navbar and sidenav are taken from
+  [CSS Materialize](https://materializecss.com/) for instant responsiveness and positive looking user interface
 
 
 ## typography
