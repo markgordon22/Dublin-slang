@@ -140,7 +140,7 @@ def login():
 def profile(username):
     if session["user"].lower() == username.lower():
         username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
+            {"username": session["user"]})["username"]
         # finds words added by user:
         words = list(mongo.db.words.find({"created_by": session["user"]}))
         # if existing user display profile
