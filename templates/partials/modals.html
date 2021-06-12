@@ -6,8 +6,8 @@
         <p class="black-text">Once deleted it's gone forever.</p>
     </div>
     <div class="modal-footer center-align" style="text-align: center;">
-        <a class="btn-small white black-text modal-button modal-close" style="width: 60px;">No</a>
-        <a href="{{ url_for('delete_word', word_id=word._id) }}" class="btn-small black white-text modal-button" style="width: 60px;">Yes</a>
+        <a class="btn-small white black-text modal-button modal-close">No</a>
+        <a href="{{ url_for('delete_word', word_id=word._id) }}" class="btn-small black white-text modal-button">Yes</a>
     </div>
 </div>
 {% endif %}
@@ -38,4 +38,7 @@
         <a href="{{ url_for('delete_profile', username_id=username._id) }}" class="btn-small black white-text modal-button">Yes</a>
     </div>
 </div>
+
+
+
 {% endif %}
