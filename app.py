@@ -23,7 +23,7 @@ def login_required(f):
     def decorated_function(*args, **kwargs):
         # no "user" in session
         if "user" not in session:
-            flash("You must log in to view this page mate :(")
+            flash("You must log in to view this page! :(")
             return redirect(url_for("login"))
         # user is in session
         return f(*args, **kwargs)
@@ -181,9 +181,11 @@ def edit_word(word_id):
             "definition_example": request.form.get("definition_example"),
             "created_by": session["user"]
         }
-        mongo.db.word.update({"_id": ObjectId(word_id)}, edit_submission)
+        print(edit_submission)
+        mongo.db.words.update({"_id": ObjectId(word_id)}, edit_submission)
         flash("word Successfully Updated!")
-
+        return redirect(url_for("get_words"))
+        
     word = mongo.db.words.find_one({"_id": ObjectId(word_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_word.html", word=word, categories=categories)
