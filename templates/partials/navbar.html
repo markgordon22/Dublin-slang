@@ -1,9 +1,10 @@
 <li><a href="{{ url_for('home') }}" class="white-text">Home</a></li>
+<li><a href="{{ url_for('get_words') }}" class="white-text">Glossary</a></li>
 {% if session.user %}
     <!-- user is logged-in -->
     <li><a href="{{ url_for('profile', username=session['user']) }}" class="white-text">Profile</a></li>
-    <li><a href="{{ url_for('add_word') }}" class="white-text">Add word</a></li>
-    <li><a href="{{ url_for('get_words') }}" class="white-text">Glossary</a></li>
+    <li><a href="{{ url_for('add_word') }}" class="white-text">Add Word</a></li>
+    
     {% if session.user|lower == "admin"|lower %}
         <!-- user is "admin" -->
     <li><a href="{{ url_for('get_categories') }}" class="white-text">Manage Categories</a></li>

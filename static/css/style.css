@@ -109,7 +109,6 @@ margin: auto;
 color: #000000;
 background-color: #ffffff;
 border-radius: 8px;
-border: 2px solid #000000;
 font-size: 16px;
 font-family: 'Mate SC', serif;
 }
@@ -260,8 +259,17 @@ font-family: 'Mate SC', serif;
 }
 
 .sidenav{
-width: 200px;
+width: 210px;
 }
+
+.modal-close{
+width: 60px;
+}
+
+.modal-button{
+width: 70px;
+}
+
 
 @media only screen and (max-width: 320px) {
   a.brand-logo {
