@@ -23,12 +23,11 @@ def login_required(f):
     def decorated_function(*args, **kwargs):
         # no "user" in session
         if "user" not in session:
-            flash("You must log in to view this page")
+            flash("You must log in to view this page mate :(")
             return redirect(url_for("login"))
         # user is in session
         return f(*args, **kwargs)
     return decorated_function
-
 
 
 @app.route("/")
@@ -49,6 +48,7 @@ def contact():
 
 
 @app.route("/add_word", methods=["GET", "POST"])
+@login_required
 def add_word():
     if request.method == "POST":
         word = {
@@ -93,6 +93,7 @@ def register():
 
 
 @app.route("/logout")
+@login_required
 def logout():
     # remove user from session cookies
     flash("You have been logged out. See ye after pal!")
@@ -135,19 +136,18 @@ def login():
 
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
+@login_required
 def profile(username):
-
     if session["user"].lower() == username.lower():
-        # grab the session user's username from db
         username = mongo.db.users.find_one(
-            {"username": session["user"]})["username"]
+        {"username": session["user"]})["username"]
         # finds words added by user:
         words = list(mongo.db.words.find({"created_by": session["user"]}))
         # if existing user display profile
         if session["user"]:
             return render_template("profile.html",
                                    username=username, words=words)
-
+    
     return redirect(url_for("login"))
 
 
@@ -171,6 +171,7 @@ def search():
 
 
 @app.route("/edit_word/<word_id>", methods=["GET", "POST"])
+@login_required
 def edit_word(word_id):
     if request.method == "POST":
         edit_submission = {
@@ -189,6 +190,7 @@ def edit_word(word_id):
 
 
 @app.route("/delete_word/<word_id>")
+@login_required
 def delete_word(word_id):
     mongo.db.words.remove({"_id": ObjectId(word_id)})
     flash("word Successfully Deleted!")
@@ -196,12 +198,14 @@ def delete_word(word_id):
 
 
 @app.route("/get_categories")
+@login_required
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
 
 
 @app.route("/add_category", methods=["GET", "POST"])
+@login_required
 def add_category():
     if request.method == "POST":
         category = {
@@ -215,6 +219,7 @@ def add_category():
 
 
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
+@login_required
 def edit_category(category_id):
     if request.method == "POST":
         send = {
@@ -229,6 +234,7 @@ def edit_category(category_id):
 
 
 @app.route("/delete_category/<category_id>")
+@login_required
 def delete_category(category_id):
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
     flash("Category has been deleted")
