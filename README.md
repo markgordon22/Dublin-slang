@@ -109,7 +109,8 @@ visit Ireland in the future and have an interest or an intrigue in words/phrases
 
 
 ## Icons
-
+* [Font Awesome](https://fontawesome.com/) icons were used as a decorative purpose used to style the site including the social media links, buttons and form elements such as the login and 
+  and registration.
 
 
 ## Colours
