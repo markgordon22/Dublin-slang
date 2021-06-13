@@ -116,7 +116,7 @@ visit Ireland in the future and have an interest or an intrigue in words/phrases
 ## Colours
 
 * [Coloors](https://coolors.co/) was used to portray visually my color scheme adopted. The colors used resembled the Irish flag to get an Irish feel as the site is a 
-Irish slang dictionary.
+Irish slang dictionary. To view color scheme click [here](https://github.com/markgordon22/irish-slang/blob/master/wireframes/colorscheme.png).
 
 
 
