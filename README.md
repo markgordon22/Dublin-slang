@@ -119,8 +119,12 @@ visit Ireland in the future and have an interest or an intrigue in words/phrases
 Irish slang dictionary. To view color scheme click [here](https://github.com/markgordon22/irish-slang/blob/master/wireframes/colorscheme.png).
 
 
-
 ## Imagery
+
+* The sole image used for the site was a hero image on the home page of a leprachaun with a pint of beer. Once the user accesses home page and begins
+their journey through the site they will see the image. Image of the leprachaun was used as it fits one of the stereotypes that leprachauns exist.
+Image of the leprachaun evokes the feeling of Ireland to the user that can not be carried out with plain text. 
+Click [here](https://github.com/markgordon22/irish-slang/blob/master/static/img/leprachaunimage.jpg) to see the image.
 
 
 
