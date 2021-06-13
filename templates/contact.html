@@ -15,25 +15,25 @@ emailjs.init("user_UnpmT2dUlD0o4aYW4LalX");
       <div class="row" id="contact-form" style="background-color: rgb(255, 166, 0);">
         <div class="input-field col s12">
         <i class="fas fa-user prefix black-text text-darken-4"></i>
-        <input name="fname" type="text" id="fname" class="validate" required>
+        <input name="fname" type="text" id="fname"  validate="true" required>
           <label for="fname" style="color: black;">First Name</label>
         </div>
         <div class="input-field col s12">
         <i class="fas fa-user prefix black-text text-darken-4"></i>
-        <input name="lname" type="text" id="lname" class="validate" required>
+        <input name="lname" type="text" id="lname" validate="true" required>
           <label for="lname" style="color: black;">Last Name</label>
         </div>
           <div class="input-field col s12">
          <i class="fas fa-folder-open prefix black-text text-darken-4"></i>
-         <input name="emailaddress" type="email" id="emailaddress" class="validate form-control" style="color: black;" required>
+         <input name="emailaddress" type="email" id="emailaddress" validate="true" style="color: black;" required>
           <label for="emailaddress" style="color: black;">Email</label>
         </div>
           <div class="input-field col s12">
         <i class="fas fa-pen prefix black-text text-darken-4"></i>
-        <textarea id="msg" name="msg" class="materialize-textarea validate" required></textarea>
+        <textarea id="msg" name="msg" class="materialize-textarea validate" validate="true" required></textarea>
           <label for="msg" style="color: black;">Textarea</label>
         </div>
-        <button type="button" onclick="sendMail()" class="btn btn-large" style="margin-bottom: 25px">
+        <button type="submit" onclick="sendMail()" class="btn btn-large modal-trigger" href="#modal1" style="margin-bottom: 25px">
         Submit
         </button>
        
