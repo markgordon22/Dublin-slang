@@ -66,7 +66,6 @@ def add_word():
     return render_template("add_word.html", categories=categories)
 
           
-
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -113,11 +112,13 @@ def login():
             if existing_user:
                 # ensure hashed password matches user input
                 if check_password_hash(
-                        existing_user["password"], request.form.get("password")):
-                            session["user"] = request.form.get("username").lower()
-                            flash("Welcome, {}".format(
+                        existing_user["password"], request.form.get(
+                            "password")):
+                        session["user"] = request.form.get(
+                                "username").lower()
+                        flash("Welcome, {}".format(
                                 request.form.get("username")))
-                            return redirect(url_for(
+                        return redirect(url_for(
                                 "profile", username=session["user"]))
                 else:
                     # invalid password match
@@ -173,6 +174,9 @@ def search():
 @app.route("/edit_word/<word_id>", methods=["GET", "POST"])
 @login_required
 def edit_word(word_id):
+    word = mongo.db.words.find_one({"_id": ObjectId(word_id)})
+    if not word or word['created_by'] != session['user']:
+        return render_template("login.html")
     if request.method == "POST":
         edit_submission = {
             "category_name": request.form.get("category_name"),
@@ -181,12 +185,11 @@ def edit_word(word_id):
             "definition_example": request.form.get("definition_example"),
             "created_by": session["user"]
         }
-        print(edit_submission)
+        
         mongo.db.words.update({"_id": ObjectId(word_id)}, edit_submission)
-        flash("word Successfully Updated!")
+        flash ("word Successfully Updated!")
         return redirect(url_for("get_words"))
         
-    word = mongo.db.words.find_one({"_id": ObjectId(word_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_word.html", word=word, categories=categories)
 
