@@ -5,7 +5,7 @@
 
      <div class="row">
         <div class="col s12 m12 center-align">
-            <a href="{{ url_for('add_category') }}" class="btn-large orange category-button text-shadow">
+            <a href="{{ url_for('add_category') }}" class="btn-small black-text category-button text-shadow">
                 Add Category
             </a>
         </div>
@@ -13,7 +13,7 @@
 
     <div class="row">
         {% for category in categories %}
-            <div class="col s12 m3">
+            <div class="col s12 m6">
                 <div class="card category-card center-align">
                     <div class="card-content black-text">
                         <span class="card-title category-title">{{ category.category_name }}</span>
