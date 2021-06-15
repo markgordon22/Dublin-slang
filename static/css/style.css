@@ -288,6 +288,20 @@ font-family: 'Mate SC', serif;
 width: 210px;
 }
 
+/*---edit button on category page----*/
+@media only screen and (max-width: 414px) {
+  a.btn-small.white.black-text.edit {
+    font-size: 15px;
+  }
+}
+
+/*---delete button on category page----*/
+@media only screen and (max-width: 414px) {
+  a.btn-small.black.white-text.modal-trigger.delete{
+    font-size: 15px;
+  }
+}
+
 
 /*---media queries to halt over flow of brand-logo on small devices---*/
 @media only screen and (max-width: 320px) {
