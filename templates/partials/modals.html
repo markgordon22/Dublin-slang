@@ -5,11 +5,15 @@
         <h4 class="black-text">Are you sure you want to delete the word {{ word.word_name }} ?</h4>
         <p class="black-text">Once deleted it's gone forever.</p>
     </div>
-    <div class="modal-footer center-align" style="text-align: center;">
-        <a class="btn-small white black-text modal-button modal-close">No</a>
-        <a href="{{ url_for('delete_word', word_id=word._id) }}" class="btn-small black white-text modal-button">Yes</a>
+    <div class="modal-footer center-align;" style="background-color: rgb(255, 166, 0);">
+        
+        <a class="btn white black-text modal-button modal-close">No</a>
+       
+        <a href="{{ url_for('delete_word', word_id=word._id) }}" class="btn black white-text modal-button">Yes</a>
     </div>
 </div>
+
+
 {% endif %}
 
 <!-- modal: confirm category deletion -->
@@ -19,9 +23,9 @@
         <h4 class="black-text">Are you sure you want to delete the {{ category.category_name }} category?</h4>
         <p class="black-text">Once deleted it's gone forever.</p>
     </div>
-    <div class="modal-footer center-align" style="text-align: center;">
-        <a class="btn-small white black-text modal-button modal-close">No</a>
-        <a href="{{ url_for('delete_category', category_id=category._id) }}" class="btn-small black white-text modal-button">Yes</a>
+    <div class="modal-footer center-align" style="background-color: rgb(255, 166, 0);">
+        <a class="btn white black-text modal-button modal-close">No</a>
+        <a href="{{ url_for('delete_category', category_id=category._id) }}" class="btn black white-text modal-button">Yes</a>
     </div>
 </div>
 {% endif %}
@@ -33,7 +37,7 @@
         <h4 class="black-text">Ye sure pal about leaving us {{ username._id }}?</h4>
         <p class="black-text">Profile will be terminated, though your word will remain unless deleted</p>
     </div>
-    <div class="modal-footer center-align" style="text-align: center;">
+    <div class="modal-footer center-align" style="background-color: rgb(255, 166, 0);">
         <a class="btn-small white black-text modal-button modal-close">No</a>
         <a href="{{ url_for('delete_profile', username_id=username._id) }}" class="btn-small black white-text modal-button">Yes</a>
     </div>
