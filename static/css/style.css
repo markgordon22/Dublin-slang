@@ -83,7 +83,7 @@ width: 100%;
 /*---css materialize collapsible----*/
 .collapsible-header{
 background-color: rgb(255, 166, 0);
-min-height: 90px;
+min-height: 110px;
 }
 
 ul.collapsible{
@@ -255,6 +255,8 @@ margin-right: 10px;
 /*---word in collapsible header----*/
 strong.black-text{
 margin-top: 9px;
+margin-left: 0px;
+margin-right: 0px;
 font-size: 17px;
 }
 
@@ -315,16 +317,24 @@ width: 210px;
 
 @media only screen and (max-width: 414px) {
 a.btn-small.black.white-text.modal-trigger{
-padding: none;
-padding-top: 7px;
-margin-left: 5px;
-font-size: 11px;
+
+margin-left: 0px;
+font-size: 9px;
 }
 }
 @media only screen and (max-width: 414.01px) {
 a.btn-small.white.black-text{
-margin-left: 1px;
-font-size: 11px;
+margin-left: 0px;
+font-size: 9px;
+}
+}
+
+@media only screen and (max-width: 414.01px) {
+strong.black-text{
+margin-top: 9px;
+margin-left: 0px;
+margin-right: 0px;
+font-size: 13px;
 }
 }
 
