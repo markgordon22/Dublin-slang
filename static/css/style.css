@@ -51,6 +51,7 @@ border: 1px solid #000000;
 border-radius: 10px;
 margin-top: 20px;
 padding: 10px;
+background-color: rgb(255, 166, 0);
 }
 
 /*--- search and reset button on glossary page---*/
@@ -162,14 +163,13 @@ background-color: rgb(255, 166, 0);
 .modal-content{
 background-color: rgb(255, 166, 0);
 }
-
-.modal-close{
+a.btn-small.white.black-text.modal-button.modal-close{
 width: 60px;
 display: block;
 margin: auto;
 }
 
-.modal-button{
+a.btn-small.black.white-text.modal-button{
 width: 70px;
 display: block;
 margin: auto;

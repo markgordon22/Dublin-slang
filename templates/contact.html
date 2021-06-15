@@ -12,7 +12,7 @@ emailjs.init("user_UnpmT2dUlD0o4aYW4LalX");
 <h3 class="center-align">Have a question? pop us a message there Mucker!</h3>
   <div class="row">
     <form class="col s12 m8 offset-m2">
-      <div class="row" id="contact-form" style="background-color: rgb(255, 166, 0);">
+      <div class="row" id="contact-form">
         <div class="input-field col s12">
         <i class="fas fa-user prefix black-text text-darken-4"></i>
         <input name="fname" type="text" id="fname"  validate="true" required>
@@ -33,21 +33,9 @@ emailjs.init("user_UnpmT2dUlD0o4aYW4LalX");
         <textarea id="msg" name="msg" class="materialize-textarea validate" validate="true" required></textarea>
           <label for="msg" style="color: black;">Textarea</label>
         </div>
-        <button type="button" onclick="sendMail()" class="btn btn-large modal-trigger" href="#modal1" style="margin-bottom: 25px">
-        Send
+        <button type="button" onclick="sendMail()" class="btn btn-large" style="margin-bottom: 25px">
+        Submit
         </button>
-       
-    <div id="modal1" class="modal center-align">
-    <div class="modal-content center-align">
-      <h4>Your email has been sent!</h4>
-      <p class="black-text">We will be in touch within the next 24 hours</p>
-    </div>
-    <div class="modal-footer center-align" style="background-color: rgb(255, 166, 0);">
-      <a href="#!" class="btn-small black white-text modal-button modal-close center-align" style="margin: auto;display: block;">Close</a>
-    </div>
-  </div>
-
-
        
                             
         
