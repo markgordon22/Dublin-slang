@@ -127,20 +127,28 @@ Image of the leprachaun evokes the feeling of Ireland to the user that can not b
 Click [here](https://github.com/markgordon22/irish-slang/blob/master/static/img/leprachaunimage.jpg) to see the image.
 
 
-
 ## Wireframes
 
 
 
  # Features
 
+* Features implemented for the website include the following.
 
+* Simple and easy navigation around the site.
+* Consistent and easy to follow design.
+* Contact form for user to enquire about any concerns or queries they have now or in the future.
+* Login, register forms for user to log into their account or register account
+* Glossary of Irish words for user to browse through slang words of Ireland
+* Search bar for user to search a word.
+* CSS materialize buttons and cards.
+* Responsive on phone, tablet and desktop devices.
 
- # Features left to implement
+# Features left to implement
 
+* None
 
-
- # Technologies
+# Technologies
 
 
 
@@ -161,9 +169,6 @@ Click [here](https://github.com/markgordon22/irish-slang/blob/master/static/img/
 
 
 ## Responsiveness Testing
-
-
-
 
 
 ## Usability Testing
@@ -206,21 +211,10 @@ Click [here](https://github.com/markgordon22/irish-slang/blob/master/static/img/
 
 ## Code
 
-
-
 ## Content
 
 
-
 ## Hero images
-
-
-
-## About page images
-
-
-
-## Our tips page images
 
 
 ## Resources
