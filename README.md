@@ -235,7 +235,24 @@ Libraries and Frameworks
 
 ## Bugs
 
+Bugs I encountered along with a solution.
 
+1. Navbar brand-logo was not responsive on smaller devices as the large font-size created an overflow.
+Solution - made media queries for the brand logo so that all of the text would be placed in the navbar with zero overflow.
+
+2. ul collapsible on profile page remained on screen despite user having words inserted on their own profile. 
+Solution - I contacted tutor support about this and they decided it be best to give the ul collapsible the same color as the card-panel so that it would be hidden from view.
+
+3. Delete and edit buttons on glossary page flowed to the next line under the collapsible header creating an unappealing ux.
+Solution: Decreased padding of buttons and font-size so that they will take up less space on the collapsible header.
+
+4. Unsure of how to go about implementing defensive programming in terms of using modals for the words in case a user wishes to delete a word.
+Solution: Tim from code isntitute gave us a great insight of to solve this in a masterclass by giving a modal id of id="modal-{{ word._id }}"
+This will activate a modal on any word once the delete button is clicked.
+
+5. Once user copies and pastes a url off a specific page on the site, logs out and then tries to paste the url into the browser, the page will load
+despite the user not having to log in which reduces user safety and security.
+Solution: Used a login required decorator so user must be logged in order to access the site's page [see here for code used](https://flask.palletsprojects.com/en/2.0.x/patterns/viewdecorators/)
 
 ## Functionality Testing
 
