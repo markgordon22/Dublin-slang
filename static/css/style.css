@@ -333,13 +333,13 @@ width: 210px;
 @media only screen and (max-width: 414px) {
 a.btn-small.black.white-text.modal-trigger{
 margin-left: 5px;
-font-size: 9px;
+font-size: 13px;
 }
 }
 @media only screen and (max-width: 414.01px) {
 a.btn-small.white.black-text{
 margin-left: 0px;
-font-size: 9px;
+font-size: 13px;
 }
 }
 
@@ -348,7 +348,7 @@ strong.black-text{
 margin-top: 9px;
 margin-left: 0px;
 margin-right: 0px;
-font-size: 13px;
+font-size: 16px;
 }
 }
 
