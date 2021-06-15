@@ -27,7 +27,7 @@ background-color: #009900;
 
 
 .nav-link{
-font-size: 20px;
+font-size: 17px;
 color: #ffffff;
 }
 
@@ -83,7 +83,7 @@ width: 100%;
 /*---css materialize collapsible----*/
 .collapsible-header{
 background-color: rgb(255, 166, 0);
-min-height: 70px;
+min-height: 90px;
 }
 
 ul.collapsible{
@@ -170,11 +170,10 @@ margin: auto;
 }
 
 a.btn-small.black.white-text.modal-button{
-width: 70px;
+width: 20px;
 display: block;
 margin: auto;
 }
-
 
 /*---button element---*/
 .btn-small{
@@ -250,11 +249,13 @@ font-size: 23px;
 a.btn-small.black.white-text.modal-trigger{
 margin-left: 10px;
 font-family: 'Mate SC', serif;
+margin-right: 10px;
 }
 
 /*---word in collapsible header----*/
 strong.black-text{
-margin-top: 10px;
+margin-top: 9px;
+font-size: 17px;
 }
 
 /*---container of buttons on profile page---*/
@@ -311,6 +312,25 @@ width: 210px;
     font-size: 35px;
   }
 }
+
+@media only screen and (max-width: 414px) {
+a.btn-small.black.white-text.modal-trigger{
+padding: none;
+padding-top: 7px;
+margin-left: 5px;
+font-size: 11px;
+}
+}
+@media only screen and (max-width: 414.01px) {
+a.btn-small.white.black-text{
+margin-left: 1px;
+font-size: 11px;
+}
+}
+
+
+
+
 
 
 
