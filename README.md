@@ -150,6 +150,80 @@ Click [here](https://github.com/markgordon22/irish-slang/blob/master/static/img/
 
 # Technologies
 
+ Technologies used
+
+ Languages
+
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+* Python modules and dependencies based in requirements.txt file.
+  * click==8.0.1
+  * dnspython==2.1.0
+  * Flask==2.0.1
+  * Flask-PyMongo==2.3.0
+  * itsdangerous==2.0.1
+  * Jinja2==3.0.1
+  * MarkupSafe==2.0.1
+  * pymongo==3.11.4
+  * Werkzeug==2.0.1
+   
+
+Libraries and Frameworks
+
+* [Am I Responsive](http://ami.responsivedesign.is/) Used to create a mockup of website.
+* [Autoprefixer CSS Online](https://autoprefixer.github.io/)
+    -  used to parse project CSS and add vendor prefixes.
+* [BSon](http://bsonspec.org/)
+    - This was imported in order to access the data used across the site.
+* [EmailJS](https://www.emailjs.com/) 
+    - Formed the email template for contact form to send confirmation emails to user
+* [HTML validator](https://validator.w3.org/)
+    - testing validator for html code
+* [CSS validator](https://validator.w3.org/) 
+    - testing validator for css code
+* [JavaScript linter](https://jshint.com/) 
+    - testing validator for javascript code
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+    - Flask was used to import the following below
+    * flash
+    * render_template
+    * redirect
+    * request
+    * session
+    * url_for functions.
+* [JQuery](https://jquery.com/)
+    - JQuery in scripts.js file in static folder was used to activate materialize components. To add, I also used Code Institute's JQuery code from the Task Manager project so that the category names could be selected and cited.
+* [Balsamiq](https://balsamiq.com/) 
+    - to do wireframes for respective devices
+* [Font Awesome](https://fontawesome.com/)
+    - Font awesome used in site to implement icons for atractive visual purposes, boosting user experience. 
+* [Git](https://git-scm.com/)
+    - Git - for version control with the use of the gitpod terminal to commit to Git and push code to GitHub.
+* [GitHub](https://github.com/)
+    - GitHub - used for storage of code after it has been pushed Gitpod terminal.
+* [Google Fonts](https://fonts.google.com/)
+    - Google fonts were used to import selected font
+* [CSS formatter](https://www.cleancss.com/css-beautify/)
+    - To beautify css code
+* [Heroku](https://dashboard.heroku.com/apps)
+    - Heroku is used for deployment of the site.
+* [Autoprefixer](https://autoprefixer.github.io/) 
+    - to add vendor prefixes to css
+* [Materialize 1.0.0](https://materializecss.com/)
+    - used for responsiveness and styling purposes. Materialize was used for cards,navabar,footer and buttons.   
+* [MongoDB](https://www.mongodb.com/1)
+    - MongoDB - used to host data on site.
+* [HTML freeformatter](https://www.freeformatter.com/html-formatter.html)
+    - to beautify html code  
+* [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/)
+    - Password security to authenticate site.
+* [Markdown](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax) 
+    - Assisted with links site elements such as images,content,wireframes and code sources used.
+* [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/) 
+    - to generate own MarkDown TOC online.
+*  Chrome dev tools to detect bugs in the code.
 
 
 # Testing
