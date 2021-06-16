@@ -71,7 +71,6 @@ visit Ireland in the future and have an interest or an intrigue in words/phrases
 ## Site owner user stories
 
 * To give site accessibility even if user has not created an account.
-* To give information on the site for its users.
 * To allow users to soley edit, termiante their own additions.
 * To be easily contacted should the user have any problems or concerns.
 * To be able to delete any material added by a registered user which falls under misconduct of site regulations.
@@ -247,14 +246,19 @@ Solution - I contacted tutor support about this and they decided it be best to g
 Solution: Decreased padding of buttons and font-size so that they will take up less space on the collapsible header.
 
 4. Unsure of how to go about implementing defensive programming in terms of using modals for the words in case a user wishes to delete a word.
-Solution: Tim from code isntitute gave us a great insight of to solve this in a masterclass by giving a modal id of id="modal-{{ word._id }}"
+Solution: Tim from code Institute tutor team gave us a great insight of to solve this in a masterclass by giving a modal id of id="modal-{{ word._id }}"
 This will activate a modal on any word once the delete button is clicked.
 
 5. Once user copies and pastes a url off a specific page on the site, logs out and then tries to paste the url into the browser, the page will load
 despite the user not having to log in which reduces user safety and security.
 Solution: Used a login required decorator so user must be logged in order to access the site's page [see here for code used](https://flask.palletsprojects.com/en/2.0.x/patterns/viewdecorators/)
 
+6. My else statement on the profile page was not working despite the code seemingly to be correct. 
+Solution - I played around with the code and put the if statement inside the for loop. Once this happened the else statment was operating as it was intended.
+
 ## Functionality Testing
+
+
 
 **Contact page**
 
@@ -268,6 +272,65 @@ Solution: Used a login required decorator so user must be logged in order to acc
 
 ## Testing Validators
 
+### HTML VALIDATOR RESULTS
+
+* Home page
+
+![image](validatortestingresults/index.png)
+
+* No errors.
+
+* Glossary page
+
+ ![image](validatortestingresults/get_words.png)
+
+* add category page
+
+![image](validatortestingresults/add_category.png)
+
+no errors.
+
+* add word page
+
+![image](validatortestingresults/add_word.png)
+
+* no errors.
+
+* edit category page
+
+![image](validatortestingresults/edit_category.png)
+
+no errors.
+
+* edit word page
+
+![image](validatortestingresults/edit_word.png)
+
+* no errors.
+
+* get categories page
+
+![image](validatortestingresults/get_categories.png)
+
+* no errors.
+
+* Log in page
+
+![image](validatortestingresults/login.png)
+
+* no errors.
+
+* register page
+
+![image](validatortestingresults/register.png)
+
+* no errors.
+
+* profile page
+
+![image](validatortestingresults/profile.png)
+
+* no errors.
 
 ## Compatability Testing
 
