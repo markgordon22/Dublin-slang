@@ -1,6 +1,5 @@
 <li><a href="{{ url_for('home') }}" class="white-text nav-link">Home</a></li>
 <li><a href="{{ url_for('get_words') }}" class="white-text nav-link">Glossary</a></li>
-<li><a href="{{ url_for('contact') }}" class="white-text nav-link">Contact</a></li>
 {% if session.user %}
 <!-- user is logged-in -->
 <li><a href="{{ url_for('profile', username=session['user']) }}" class="white-text nav-link">Profile</a></li>

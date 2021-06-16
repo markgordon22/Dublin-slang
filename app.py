@@ -42,11 +42,6 @@ def get_words():
     return render_template("get_words.html", words=words)
 
 
-@app.route("/contact")
-def contact():
-    return render_template("contact.html")
-
-
 @app.route("/add_word", methods=["GET", "POST"])
 @login_required
 def add_word():
