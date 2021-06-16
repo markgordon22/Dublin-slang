@@ -6,27 +6,28 @@
 <div class="row" id="contact-form">
 <div class="input-field col s12">
   <i class="fas fa-user prefix black-text text-darken-4"></i>
-  <input name="fname" type="text" id="fname"  validate="true" required>
+  <input name="fname" type="text" id="fname"  class="validate" required>
   <label for="fname" style="color: black;">First Name</label>
 </div>
 <div class="input-field col s12">
   <i class="fas fa-user prefix black-text text-darken-4"></i>
-  <input name="lname" type="text" id="lname" validate="true" required>
+  <input name="lname" type="text" id="lname" class="validate" required>
   <label for="lname" style="color: black;">Last Name</label>
 </div>
 <div class="input-field col s12">
   <i class="fas fa-folder-open prefix black-text text-darken-4"></i>
-  <input name="emailaddress" type="email" id="emailaddress" validate="true" style="color: black;" required>
+  <input name="emailaddress" type="email" id="emailaddress" class="validate" style="color: black;" required>
   <label for="emailaddress" style="color: black;">Email</label>
 </div>
 <div class="input-field col s12">
   <i class="fas fa-pen prefix black-text text-darken-4"></i>
-  <textarea id="msg" name="msg" class="materialize-textarea validate" validate="true" required></textarea>
+  <textarea id="msg" name="msg" class="materialize-textarea validate" required></textarea>
   <label for="msg" style="color: black;">Textarea</label>
 </div>
 <button type="button" onclick="sendMail()" class="btn btn-large" style="margin-bottom: 25px">
 Submit
 </button>
+</form>
 {% block scripts %}
 <script src="{{ url_for('static', filename='js/email.js') }}"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
