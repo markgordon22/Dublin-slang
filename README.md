@@ -176,14 +176,14 @@ Libraries and Frameworks
     -  used to parse project CSS and add vendor prefixes.
 * [BSon](http://bsonspec.org/)
     - This was imported in order to access the data used across the site.
-* [EmailJS](https://www.emailjs.com/) 
-    - Formed the email template for contact form to send confirmation emails to user
 * [HTML validator](https://validator.w3.org/)
     - testing validator for html code
+* [Javascript validator](https://jshint.com/)
+    - testing validator for javascript code
 * [CSS validator](https://validator.w3.org/) 
     - testing validator for css code
-* [JavaScript linter](https://jshint.com/) 
-    - testing validator for javascript code
+* [pep8 validator](http://pep8online.com/checkresult)
+    - testing validator for python code
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
     - Flask was used to import the following below
     * flash
@@ -206,6 +206,8 @@ Libraries and Frameworks
     - Google fonts were used to import selected font
 * [CSS formatter](https://www.cleancss.com/css-beautify/)
     - To beautify css code
+* [Javascript formatter](https://beautifier.io/)
+    - To beautify javascript code.
 * [Heroku](https://dashboard.heroku.com/apps)
     - Heroku is used for deployment of the site.
 * [Autoprefixer](https://autoprefixer.github.io/) 
@@ -342,10 +344,11 @@ no errors.
 
 * Javascript
 
- ![image](validatortestingresults/javascript.jpg)
+ ![image](validatortestingresults/javascript.png)
 
 
 ## Compatability Testing
+
 
 
 
