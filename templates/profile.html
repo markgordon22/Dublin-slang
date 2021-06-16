@@ -23,10 +23,11 @@
         {% include "partials/modals.html" %}
       </div>
       <div class="collapsible-body orange lighten-4">
-        <strong><em>Category: </em></strong>{{ word.category_name}}
-        <p><strong><em>Definition: </em></strong>{{ word.word_name }}</p>
-        <p><strong><em>Example: </em></strong>{{ word.definition_example }}</p>
-        <p><strong><em>by: {{ word.created_by }}</em></strong></p>
+        <strong></strong>Category: {{ word.category_name }}</strong>
+        <p>word: {{ word.word_name }}</p>
+        <p>Definition: {{ word.word_def }}</p>
+        <p>example: {{ word.definition_example }}</p>
+        <p><em>Created by: {{ word.created_by }}</em></p>
       </div>
     </li>
     {% else %}
