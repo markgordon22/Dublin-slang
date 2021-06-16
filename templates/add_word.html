@@ -1,64 +1,57 @@
 {% extends "base.html" %}
 {% block content %}
-
-    <h3 class="black-text center-align">Add Word!</h3>
-
-        <div class="row card-panel add-word-panel">
-            <form class="col s12" method="POST" action="{{ url_for('add_word') }}">
-                <!-- category selection -->
-                <div class="row">
-                    <div class="input-field">
-                        <i class="fas fa-folder-open prefix black-text"></i>
-                        <select id="category_name" name="category_name" class="validate" required>
-                            <option value="" disabled selected>Choose Category</option>
-                            {% for category in categories %}
-                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-                            {% endfor %}
-                        </select>
-                        <label for="category_name" style="color: #000000;"></label>
-                    </div>
-                </div>
-<!--word-->
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-pencil-alt prefix black-text"></i>
-                    <input id="word_name" name="word_name" minlength="3" maxlength="30" type="text" validate="true" required>
-                        <label for="word_name" class="black-text">Word</label>
-                           </div>
-                              </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-align-left prefix black-text"></i>
-                    <textarea id="word_def" name="word_def" minlength="3" maxlength="150"
-                            class="materialize-textarea validate" required></textarea>
-                        <label for="word_def" class="black-text">Definition</label>
-                    </div>
-                </div>
-
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-comment prefix black-text"></i>
-                    <textarea id="definition_example" name="definition_example" minlength="5" maxlength="250"
-                            class="materialize-textarea validate" required>
-                        
-                        </textarea>
-                        <label for="definition_example" class="black-text">Example</label>
-                    </div>
-        </div>
-         
-                 <div class="row">
-                    <div class="col s12 center-align">
-                        <button type="submit" class="btn-small black white-text">
-                            Add Word
-                        </button>
-                        <a href="{{ url_for('get_words') }}" class="btn-small white black-text">
-                            Cancel 
-                        </a>
-                    </div>
-                </div>
-            </form>
-        </div>
-        
-
+<h3 class="black-text center-align">Add Word!</h3>
+<div class="row card-panel add-word-panel">
+  <form class="col s12" method="POST" action="{{ url_for('add_word') }}">
+    <!-- category selection -->
+    <div class="row">
+      <div class="input-field">
+        <i class="fas fa-folder-open prefix black-text"></i>
+        <select id="category_name" name="category_name" class="validate" required>
+          <option value="" disabled selected>Choose Category</option>
+          {% for category in categories %}
+          <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+          {% endfor %}
+        </select>
+        <label for="category_name" style="color: #000000;"></label>
+      </div>
+    </div>
+    <!--word-->
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="fas fa-pencil-alt prefix black-text"></i>
+        <input id="word_name" name="word_name" minlength="3" maxlength="30" type="text" validate="true" required>
+        <label for="word_name" class="black-text">Word</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="fas fa-align-left prefix black-text"></i>
+        <textarea id="word_def" name="word_def" minlength="3" maxlength="150"
+          class="materialize-textarea validate" required></textarea>
+        <label for="word_def" class="black-text">Definition</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="fas fa-comment prefix black-text"></i>
+        <textarea id="definition_example" name="definition_example" minlength="5" maxlength="250"
+          class="materialize-textarea validate" required>
+        </textarea>
+        <label for="definition_example" class="black-text">Example</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 center-align">
+        <button type="submit" class="btn-small black white-text">
+        Add Word
+        </button>
+        <a href="{{ url_for('get_words') }}" class="btn-small white black-text">
+        Cancel 
+        </a>
+      </div>
+    </div>
+  </form>
+</div>
 {% endblock %}
 ©

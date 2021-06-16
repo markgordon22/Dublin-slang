@@ -1,62 +1,57 @@
 {% extends "base.html" %}
 {% block content %}
-
 <h3 class="black-text center-align">Edit word!</h3>
-
 <div class="row card-panel">
-    <form class="col s12" method="POST" action="{{ url_for('edit_word', word_id=word._id) }}">
+  <form class="col s12" method="POST" action="{{ url_for('edit_word', word_id=word._id) }}">
     <div class="row">
-	<div class="input-field col s12">
+      <div class="input-field col s12">
         <i class="fas fa-folder-open prefix"></i>
-		<select id="category_name" name="category_name" class="validate" required>
-        <option value="" disabled>Choose Category</option>
-        {% for category in categories %}
-            {% if category.category_name == word.category_name %}
-              <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
-            {% else %}
-            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-            {% endif %}
-            {% endfor %}
-            </select>
-            	<label for="category_name" style="color: black;">Word Category</label>
-				</div>
-            </div>
-            
-		       <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-pencil-alt prefix black-text"></i>
-                    <input id="word_name" name="word_name" minlength="2" maxlength="30" type="text" class="validate" value="{{ word.word_name }}" required>
-                        <label for="word_name" style="color: #000000;">Word</label>
-                           </div>
-                              </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-align-left prefix black-text"></i>
-                    <textarea id="word_def" name="word_def" minlength="3" maxlength="150"
-                            class="materialize-textarea validate" required>{{ word.word_def }}</textarea>
-                        <label for="word_def" style="color:#000000">Definition</label>
-                    </div>
-                </div>
-            <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-comment prefix black-text"></i>
-                    <textarea id="definition_example" name="definition_example" minlength="5" maxlength="250"
-                            class="materialize-textarea validate" required>{{ word.definition_example }}</textarea>
-                        <label for="definition_example" style="color: #000000;">Example</label>
-                    </div>
-        </div>
-         
-                   <div class="row">
-                    <div class="col s12 center-align">
-                        <button type="submit" class="btn-small black white-text">
-                            edit Word
-                        </button>
-                        <a href="{{ url_for('get_words') }}" class="btn-small white black-text">
-                            Cancel 
-                        </a>
-                    </div>
-                </div>
-            </form>
-        </div>
-
+        <select id="category_name" name="category_name" class="validate" required>
+          <option value="" disabled>Choose Category</option>
+          {% for category in categories %}
+          {% if category.category_name == word.category_name %}
+          <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+          {% else %}
+          <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+          {% endif %}
+          {% endfor %}
+        </select>
+        <label for="category_name" style="color: black;">Word Category</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="fas fa-pencil-alt prefix black-text"></i>
+        <input id="word_name" name="word_name" minlength="2" maxlength="30" type="text" class="validate" value="{{ word.word_name }}" required>
+        <label for="word_name" style="color: #000000;">Word</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="fas fa-align-left prefix black-text"></i>
+        <textarea id="word_def" name="word_def" minlength="3" maxlength="150"
+          class="materialize-textarea validate" required>{{ word.word_def }}</textarea>
+        <label for="word_def" style="color:#000000">Definition</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="fas fa-comment prefix black-text"></i>
+        <textarea id="definition_example" name="definition_example" minlength="5" maxlength="250"
+          class="materialize-textarea validate" required>{{ word.definition_example }}</textarea>
+        <label for="definition_example" style="color: #000000;">Example</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 center-align">
+        <button type="submit" class="btn-small black white-text">
+        edit Word
+        </button>
+        <a href="{{ url_for('get_words') }}" class="btn-small white black-text">
+        Cancel 
+        </a>
+      </div>
+    </div>
+  </form>
+</div>
 {% endblock %}

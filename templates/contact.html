@@ -3,40 +3,37 @@
 <script src="{{ url_for('static', filename='js/email.js') }}"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 <script type="text/javascript">
-(function() {
-emailjs.init("user_UnpmT2dUlD0o4aYW4LalX");
-})();
+  (function() {
+  emailjs.init("user_UnpmT2dUlD0o4aYW4LalX");
+  })();
 </script>
 {% extends "base.html" %}
 {% block content %}
 <h3 class="center-align">Have a question? pop us a message there Mucker!</h3>
-  <div class="row">
-    <form class="col s12 m8 offset-m2">
-      <div class="row" id="contact-form">
-        <div class="input-field col s12">
-        <i class="fas fa-user prefix black-text text-darken-4"></i>
-        <input name="fname" type="text" id="fname"  validate="true" required>
-          <label for="fname" style="color: black;">First Name</label>
-        </div>
-        <div class="input-field col s12">
-        <i class="fas fa-user prefix black-text text-darken-4"></i>
-        <input name="lname" type="text" id="lname" validate="true" required>
-          <label for="lname" style="color: black;">Last Name</label>
-        </div>
-          <div class="input-field col s12">
-         <i class="fas fa-folder-open prefix black-text text-darken-4"></i>
-         <input name="emailaddress" type="email" id="emailaddress" validate="true" style="color: black;" required>
-          <label for="emailaddress" style="color: black;">Email</label>
-        </div>
-          <div class="input-field col s12">
-        <i class="fas fa-pen prefix black-text text-darken-4"></i>
-        <textarea id="msg" name="msg" class="materialize-textarea validate" validate="true" required></textarea>
-          <label for="msg" style="color: black;">Textarea</label>
-        </div>
-        <button type="button" onclick="sendMail()" class="btn btn-large" style="margin-bottom: 25px">
-        Submit
-        </button>
-       
-                            
-        
+<div class="row">
+<form class="col s12 m8 offset-m2">
+<div class="row" id="contact-form">
+<div class="input-field col s12">
+  <i class="fas fa-user prefix black-text text-darken-4"></i>
+  <input name="fname" type="text" id="fname"  validate="true" required>
+  <label for="fname" style="color: black;">First Name</label>
+</div>
+<div class="input-field col s12">
+  <i class="fas fa-user prefix black-text text-darken-4"></i>
+  <input name="lname" type="text" id="lname" validate="true" required>
+  <label for="lname" style="color: black;">Last Name</label>
+</div>
+<div class="input-field col s12">
+  <i class="fas fa-folder-open prefix black-text text-darken-4"></i>
+  <input name="emailaddress" type="email" id="emailaddress" validate="true" style="color: black;" required>
+  <label for="emailaddress" style="color: black;">Email</label>
+</div>
+<div class="input-field col s12">
+  <i class="fas fa-pen prefix black-text text-darken-4"></i>
+  <textarea id="msg" name="msg" class="materialize-textarea validate" validate="true" required></textarea>
+  <label for="msg" style="color: black;">Textarea</label>
+</div>
+<button type="button" onclick="sendMail()" class="btn btn-large" style="margin-bottom: 25px">
+Submit
+</button>
 {% endblock %}

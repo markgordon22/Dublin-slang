@@ -1,61 +1,55 @@
 {% extends "base.html" %}
 {% block content %}
-
 <h3 class="black-text center-align">Irish Glossary</h3>
 <p class="black-text center-align">
-    Add your favourite word or search for a word below!</p>
-
-    <div class="row card-panel">
-<form action="{{ url_for('search') }}" method="POST" class="col s12">
+  Add your favourite word or search for a word below!
+</p>
+<div class="row card-panel">
+  <form action="{{ url_for('search') }}" method="POST" class="col s12">
     <div class="row valign-wrapper center-align">
-        <div class="input-field col s12">
-            <i class="fas fa-search prefix black-text text-darken-3"></i>
-            <input type="text" name="query" id="query" class="validate" required>
-            <label for="query" style="color: black;">Search Word</label>
-       </div>
-
-        <button type="submit" class="black btn white-text search-word-btn">
-        <i class="fas fa-search"></i></button>
-        <a href="{{ url_for('get_words' )}}" class="white btn btn-reset" style="color: #000000;"><i class="fas fa-times"></i></a>
-            </div>
-        </form>
+      <div class="input-field col s12 m9">
+        <i class="fas fa-search prefix black-text text-darken-3"></i>
+        <input type="text" name="query" id="query" class="validate" required>
+        <label for="query" style="color: black;">Search Word</label>
+      </div>
+      <button type="submit" class="black btn white-text search-word-btn">
+      <i class="fas fa-search"></i></button>
+      <a href="{{ url_for('get_words' )}}" class="white btn btn-reset" style="color: #000000;"><i class="fas fa-times"></i></a>
     </div>
-
-    {% if words|length > 0 %}
-    <ul class="collapsible">
-        {% for word in words %}
-        <li>
-            <div class="collapsible-header">
-                <div class="col s6">
-                    <i class="fas fa-caret-down"></i><strong>{{ word.word_name }}</strong>
-                {% if session.user|lower == word.created_by|lower or session.user == "admin" %}
-                <a href="#modal-{{ word._id }}" class="btn-small black white-text modal-trigger">Delete</a>
-                <a href="{{ url_for('edit_word', word_id=word._id) }}" class="btn-small white black-text">Edit</a>
-                {% include "partials/modals.html" %}
-                {% endif %}
-                </div>
-                
-            </div>
-            <div class="collapsible-body orange lighten-5">
-                <strong></strong>Category: {{ word.category_name }}</strong>
-                <p>word: {{ word.word_name }}</p>
-                <p>Definition: {{ word.word_def }}</p>
-                <p>example: {{ word.definition_example }}</p>
-                <p><em>Created by: {{ word.created_by }}</em></p>
-            </div>
-        </li>
-        {% endfor %}
-            </ul>
-    {% else %}
-        <h3 class="red-text center-align">Ah jayney mac no results found :(</h3>
-    {% endif %}
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-    <h4 class="center-align">Want to add a word ye langer?</h4>
-    <a href="{{ url_for('add_word') }}" class="btn-small add-word-button"><u>add a word!</u></a>
-    
-    <h5 class="center-align">Unsure of something? Give us a bell!</h5>
-    <a href="{{url_for('contact') }}" class="btn-small contact-us-button"><u>Contact us!</u></a>
-    
-    {% endblock %}
+  </form>
+</div>
+{% if words|length > 0 %}
+<ul class="collapsible">
+  {% for word in words %}
+  <li>
+    <div class="collapsible-header">
+      <div class="col s6">
+        <i class="fas fa-caret-down"></i><strong class="black-text">{{ word.word_name }}</strong>
+        {% if session.user|lower == word.created_by|lower or session.user == "admin" %}
+        <a href="#modal-{{ word._id }}" class="btn-small black white-text modal-trigger">Delete</a>
+        <a href="{{ url_for('edit_word', word_id=word._id) }}" class="btn-small white black-text">Edit</a>
+        {% include "partials/modals.html" %}
+        {% endif %}
+      </div>
+    </div>
+    <div class="collapsible-body orange lighten-4">
+      <strong></strong>Category: {{ word.category_name }}</strong>
+      <p>word: {{ word.word_name }}</p>
+      <p>Definition: {{ word.word_def }}</p>
+      <p>example: {{ word.definition_example }}</p>
+      <p><em>Created by: {{ word.created_by }}</em></p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<h3 class="red-text center-align">Ah jayney mac no results found :(</h3>
+{% endif %}
+<div class="container">
+<div class="row">
+<div class="col s12">
+<h4 class="center-align">Want to add a word ye langer?</h4>
+<a href="{{ url_for('add_word') }}" class="btn-small add-word-button"><u>add a word!</u></a>
+<h5 class="center-align">Unsure of something? Give us a bell!</h5>
+<a href="{{url_for('contact') }}" class="btn-small contact-us-button"><u>Contact us!</u></a>
+{% endblock %}

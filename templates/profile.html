@@ -1,69 +1,62 @@
 {% extends "base.html" %}
 {% block content %}
-
-    <div class="row">
-        <div class="col s12 m8 offset-m2">
-            <div class="card-panel profile-card">
-                <h3 class="center-align black-text">
-                    {{ username }}'s Profile
-                </h3>
-            </div>
-        </div>
+<div class="row">
+  <div class="col s12 m8 offset-m2">
+    <div class="card-panel profile-card">
+      <h3 class="center-align black-text">
+        {{ username }}'s Profile
+      </h3>
     </div>
-     
-      <div class="container">
-        <h4 class="black-text center-align">Below is the slang you've added mate!:</h4>
-        <!--Logged in user and site owner can edit or delete added words-->
-        
-        <ul class="collapsible">
-            {% for word in words %}
-            {% if session.user == word.created_by %}
-            <li>
-                <div class="collapsible-header white-text">
-                    <i class="fas fa-caret-down black-text"></i><strong class="black-text">{{ word.word_name }}</strong>
-                    <a href="#modal-{{ word._id }}" class="btn-small black white-text modal-trigger">Delete</a>
-                    <a href="{{ url_for('edit_word', word_id=word._id) }}"
-                        class="btn-small white black-text" style="margin-left: 4px;">Edit</a>
-                    {% include "partials/modals.html" %}
-                </div>
-                <div class="collapsible-body orange lighten-4">
-                    <strong><em>Category: </em></strong>{{ word.category_name}}
-                    <p><strong><em>Definition: </em></strong>{{ word.word_name }}</p>
-                    <p><strong><em>Example: </em></strong>{{ word.definition_example }}</p>
-                    <p><strong><em>by: {{ word.created_by }}</em></strong></p>
-                    </div>
-               </li>
-            {% else %}
-            <div class="no-words card-panel valign-wrapper">
-                <h3 class="center-align">
-                    Wait a sec you've not added a word mate!
-                </h3>
-            </div>
-            {% endif %}
-            {% endfor %}
-        </ul>
-    </div>
+  </div>
 </div>
-
-<div class="container headings-container">
-    <div class="row">
-        <div class="col s12">
-            <h5 class="center-align">Go ahead and a your own word!</h5>
-            <a href="{{ url_for('add_word') }}" class="btn-small add-word-button center-align"><u>add a word!</u></a>
-            </div>
-            <div class="col s12 m6">
-            <h5 class="center-align">Have a question? then contact us then chief!</h5>
-            <a href="{{ url_for('contact') }}" class="btn-small add-word-button center-align"><u>contact us!</u></a>
-            </div>
-            <div class="col s12 m6">
-            <h5 class="center-align">click below to delete your profile :(</h5>
-            <a href="#modal-{{ username._id }}" class="btn-small add-word-button center-align modal-trigger" data-target="{{ username._id }}"><i
-            class="fas fa-trash-alt"></i>
-            Delete Profile</a>
-            {% include "partials/modals.html" %}
-            </div>
-        </div>
+<div class="container">
+  <h4 class="black-text center-align">Below is the slang you've added mate!:</h4>
+  <!--Logged in user and site owner can edit or delete added words-->
+  <ul class="collapsible">
+    {% for word in words if session.user == word.created_by %}
+    <li>
+      <div class="collapsible-header white-text">
+        <i class="fas fa-caret-down black-text"></i><strong class="black-text">{{ word.word_name }}</strong>
+        <a href="#modal-{{ word._id }}" class="btn-small black white-text modal-trigger">Delete</a>
+        <a href="{{ url_for('edit_word', word_id=word._id) }}"
+          class="btn-small white black-text">Edit</a>
+        {% include "partials/modals.html" %}
+      </div>
+      <div class="collapsible-body orange lighten-4">
+        <strong><em>Category: </em></strong>{{ word.category_name}}
+        <p><strong><em>Definition: </em></strong>{{ word.word_name }}</p>
+        <p><strong><em>Example: </em></strong>{{ word.definition_example }}</p>
+        <p><strong><em>by: {{ word.created_by }}</em></strong></p>
+      </div>
+    </li>
+    {% else %}
+    <div class="no-words card-panel valign-wrapper no-word-panel">
+      <h3 class="center-align">
+        Wait a sec you've not added a word mate!
+      </h3>
     </div>
+    {% endfor %}
+  </ul>
 </div>
-
+</div>
+<div class="container buttons-container">
+  <div class="row">
+    <div class="col s12">
+      <h5 class="center-align">Go ahead and a your own word!</h5>
+      <a href="{{ url_for('add_word') }}" class="btn-small add-word-button center-align"><u>add a word!</u></a>
+    </div>
+    <div class="col s12 m6">
+      <h5 class="center-align">Have a question? then contact us then chief!</h5>
+      <a href="{{ url_for('contact') }}" class="btn-small add-word-button center-align"><u>contact us!</u></a>
+    </div>
+    <div class="col s12 m6">
+      <h5 class="center-align">click below to delete your profile :(</h5>
+      <a href="#modal-{{ username._id }}" class="btn-small add-word-button center-align modal-trigger" data-target="{{ username._id }}"><i
+        class="fas fa-trash-alt"></i>
+      Delete Profile</a>
+      {% include "partials/modals.html" %}
+    </div>
+  </div>
+</div>
+</div>
 {% endblock %}
