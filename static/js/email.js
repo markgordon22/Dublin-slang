@@ -1,5 +1,24 @@
+/*function validateForm() {
+ if (x == "") {
+alert("Name must be filled out");
+} else if(y == "") {
+alert("last name must be filled out");
+} else {
+if(z == "") {
+alert("email address must be filled out");
+}
+if(a == ""){
+alert("textarea must be filled out")
+}
+else {
+sendMail()
+}
+}
 
-function sendMail() {
+
+}*/
+
+function sendMail(event) {
     let params = {
         from_name: "Irish Slang",
         first_name: document.getElementById("fname").value,
@@ -8,19 +27,24 @@ function sendMail() {
         to: document.getElementById("emailaddress").value,
         message: document.getElementById("msg").value
     };
-
-    emailjs.send("service_4b99rtc","template_nllrsno",params)
+   
+    emailjs.send("service_4b99rtc","template_nllrsno", params)
    .then(
        // Alert sent if email successful
-    function(response) {
-            alert("Your email has been sent! :) we will be in contact within the next 24 hours");
-            location.reload();
-},
-        // Alert not sent if email was unsuccessful
-    function(error) {
-            alert("Awww Your email was not sent :( please try submitting all fields again!");
-            location.reload();
-        }
-   )
-     return false; //prevents page reloading immediately
+         
+            function (response) {
+                console.log("SUCCESS", response);
+            elem = document.getElementById("modal1")
+            let instance = M.Modal.getInstance(elem);
+            instance.open()
+
+
+            },
+            function (error) {
+                console.log("FAILED", error);
+            }
+        );
+        event.preventDefault();
 }
+$('.modal').modal();
+document.getElementById("emailform").addEventListener('submit', sendMail);
