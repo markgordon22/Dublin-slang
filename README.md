@@ -332,6 +332,19 @@ no errors.
 
 * no errors.
 
+### CSS validator
+
+* Style.css
+
+ ![image](validatortestingresults/style.css.jpg)
+
+### Javascript validator
+
+* Javascript
+
+ ![image](validatortestingresults/javascript.jpg)
+
+
 ## Compatability Testing
 
 
