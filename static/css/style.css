@@ -362,7 +362,7 @@ strong.black-text {
 
 @media only screen and (max-width: 414px) {
 	a.btn-small.black.white-text.modal-trigger.delete {
-		font-size: 12px;
+		font-size: 15px;
 	}
 }
 
@@ -402,9 +402,9 @@ strong.black-text {
 }
 
 @media only screen and (max-width: 414.01px) {
-	a.btn-small.white.black-text {
+	a.btn-small.white.black-text.edit {
 		margin-right: 0px;
-        font-size: 13px;
+        font-size: 15px;
         margin-top: 7px;
 	}
 }
