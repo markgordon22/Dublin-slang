@@ -66,13 +66,11 @@ visit Ireland in the future and have an interest or an intrigue in words/phrases
 * I want to be able to edit, delete the words that I added to the site.
 * I want to be able to edit, delete my profile that I created.
 * I want to be able to see words added by other users of the site.
-* I want to be able to contact the site's site owner over any query or issue I may have now or in the future.
 
 ## Site owner user stories
 
 * To give site accessibility even if user has not created an account.
-* To allow users to soley edit, termiante their own additions.
-* To be easily contacted should the user have any problems or concerns.
+* To allow users to soley edit, delete their own words that they have added.
 * To be able to delete any material added by a registered user which falls under misconduct of site regulations.
 
 # User Requirements and Expectations
@@ -262,10 +260,12 @@ Solution - I played around with the code and put the if statement inside the for
 
 
 
+
 **Contact page**
 
 
 ## Responsiveness Testing
+
 
 
 ## Usability Testing
@@ -338,14 +338,31 @@ no errors.
 
 * Style.css
 
- ![image](validatortestingresults/style.css.jpg)
+![image](validatortestingresults/style.css.jpg)
 
 ### Javascript validator
 
 * Javascript
 
- ![image](validatortestingresults/javascript.png)
+![image](validatortestingresults/javascript.png)
 
+* No errors.
+
+### Python validator
+
+* Python
+
+![image](validatortestingresults/python.png)
+
+* No errors.
+
+### Heroku app 
+
+* Heroku app
+
+![image](validatortestingresults/herokuapp.png)
+
+* No errors.
 
 ## Compatability Testing
 
