@@ -67,7 +67,7 @@ def add_word():
             "created_by": session["user"]
         }
         mongo.db.words.insert_one(word)
-        flash("your Word has been added")
+        flash("your word has been added")
         return redirect(url_for("get_words"))
 
     categories = mongo.db.categories.find().sort("category_name", 1)
