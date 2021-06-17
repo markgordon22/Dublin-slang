@@ -2,7 +2,7 @@ import os
 from functools import wraps
 from flask import (
     Flask, flash, render_template,
-    redirect, g, request, session, url_for)
+    redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -17,6 +17,9 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+"""login_required taken from Task Mini Project
+used to add defensive programming to site for user safety and security"""
+
 
 def login_required(f):
     @wraps(f)
@@ -30,16 +33,26 @@ def login_required(f):
     return decorated_function
 
 
+# Home page rendering
 @app.route("/")
 @app.route("/home")
 def home():
     return render_template("index.html")
 
 
+"""get_word() words from database and displays them on the glossary
+page of site """
+
+
 @app.route("/get_words")
 def get_words():
     words = list(mongo.db.words.find())
     return render_template("get_words.html", words=words)
+
+
+"""user can add word from the add_word() with the word keys
+and values in the word dictionary. the dictionary will
+insert into the database via the insert_one()"""
 
 
 @app.route("/add_word", methods=["GET", "POST"])
@@ -60,7 +73,13 @@ def add_word():
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_word.html", categories=categories)
 
-          
+
+"""
+Register() - first time users can make a profile
+by inserting username and a password
+"""
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -86,6 +105,10 @@ def register():
     return render_template("register.html")
 
 
+""" Logout() logs user out of session and then redirected to login page
+once logged out """
+
+
 @app.route("/logout")
 @login_required
 def logout():
@@ -93,6 +116,11 @@ def logout():
     flash("You have been logged out. See ye after pal!")
     session.pop("user")
     return redirect(url_for("login"))
+
+
+"""Login() if user meets criteria for username and password
+they're brought to their profile page unless they're
+username and/or password is false they remian at the login page """
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -131,6 +159,11 @@ def login():
     return redirect(url_for("profile", username=session["user"]))
 
 
+"""profile() to render user profile with variables words
+and username. If session["user] is falsey then the user
+will be redirected back to the login page"""
+
+
 @app.route("/profile/<username>", methods=["GET", "POST"])
 @login_required
 def profile(username):
@@ -143,8 +176,13 @@ def profile(username):
         if session["user"]:
             return render_template("profile.html",
                                    username=username, words=words)
-    
     return redirect(url_for("login"))
+
+
+"""
+delete_profile() gets the user's details from the database and
+deletes it with the delete_one(). user is then directed to register page
+"""
 
 
 @app.route("/delete_profile")
@@ -159,11 +197,22 @@ def delete_profile():
     return render_template("register.html", username=username)
 
 
+"""
+The search function goes through words in the database where it will match
+the query keyword and render the word on the glossary page
+"""
+
+
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
     words = list(mongo.db.words.find({"$text": {"$search": query}}))
     return render_template("get_words.html", words=words)
+
+
+""" edit word gets word from db and updates it accordingly
+with the keys and values in edit_submission dictionary.
+It then updates the database with the update() """
 
 
 @app.route("/edit_word/<word_id>", methods=["GET", "POST"])
@@ -180,13 +229,16 @@ def edit_word(word_id):
             "definition_example": request.form.get("definition_example"),
             "created_by": session["user"]
         }
-        
         mongo.db.words.update({"_id": ObjectId(word_id)}, edit_submission)
-        flash ("word Successfully Updated!")
+        flash("word Successfully Updated!")
         return redirect(url_for("get_words"))
-        
+
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_word.html", word=word, categories=categories)
+
+
+"""delete_word() removes word from database with the remove(). user is then
+redirected to glossary page after """
 
 
 @app.route("/delete_word/<word_id>")
@@ -197,11 +249,20 @@ def delete_word(word_id):
     return redirect(url_for("get_words"))
 
 
+"""lists categories from database and then renders
+to the categories page with edit and
+delete options for those respective categories"""
+
+
 @app.route("/get_categories")
 @login_required
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
+
+
+"""add a category with the add_category(). Solely for
+admin when wishing to make a category """
 
 
 @app.route("/add_category", methods=["GET", "POST"])
@@ -218,6 +279,10 @@ def add_category():
     return render_template("add_category.html")
 
 
+"""edit a category with the edit_category(). This again is solely for
+admin """
+
+
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 @login_required
 def edit_category(category_id):
@@ -231,6 +296,10 @@ def edit_category(category_id):
 
     category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})
     return render_template("edit_category.html", category=category)
+
+
+"""delete a category to remove a category from database. This is solely for
+admin """
 
 
 @app.route("/delete_category/<category_id>")
