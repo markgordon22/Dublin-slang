@@ -1,4 +1,4 @@
-<!--From task mini project and modified for my project----->
+<!--From task manager mini project and modified for my project----->
 <!-- modal: confirm task deletion -->
 {% if word %}
 <div id="modal-{{ word._id }}" class="modal">
@@ -33,8 +33,8 @@
     <p class="black-text">Profile will be terminated, though your word will remain unless deleted</p>
   </div>
   <div class="modal-footer center-align" style="background-color: rgb(255, 166, 0);">
-    <a class="btn-small white black-text modal-button modal-close">No</a>
-    <a href="{{ url_for('delete_profile', username_id=username._id) }}" class="btn-small black white-text modal-button">Yes</a>
+    <a class="btn white black-text modal-button modal-close">No</a>
+    <a href="{{ url_for('delete_profile', username_id=username._id) }}" class="btn black white-text modal-button">Yes</a>
   </div>
 </div>
 {% endif %}
