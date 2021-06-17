@@ -230,7 +230,7 @@ def edit_word(word_id):
             "created_by": session["user"]
         }
         mongo.db.words.update({"_id": ObjectId(word_id)}, edit_submission)
-        flash("word Successfully Updated!")
+        flash("word successfully updated!")
         return redirect(url_for("get_words"))
 
     categories = mongo.db.categories.find().sort("category_name", 1)
@@ -245,7 +245,7 @@ redirected to glossary page after """
 @login_required
 def delete_word(word_id):
     mongo.db.words.remove({"_id": ObjectId(word_id)})
-    flash("word Successfully Deleted!")
+    flash("word successfully deleted!")
     return redirect(url_for("get_words"))
 
 
@@ -273,7 +273,7 @@ def add_category():
             "category_name": request.form.get("category_name")
         }
         mongo.db.categories.insert_one(category)
-        flash("New Category has been Added")
+        flash("New category has been added")
         return redirect(url_for("get_categories"))
 
     return render_template("add_category.html")
