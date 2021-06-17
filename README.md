@@ -232,10 +232,6 @@ Libraries and Frameworks
 ## Lighthouse testing
 
 
-
-
-
-
 ## Bugs
 
 Bugs I encountered along with a solution.
@@ -444,7 +440,9 @@ no errors.
 
 ## Compatability Testing
 
-
+| Compatability tests                         | Chrome | Firefox | Edge |
+| --------------------------------------------| ------ | ------- | ---- |
+| Is the website compatable on these browsers?     |   Yes  |    Yes |  Yes   |
 
 
 ## Testing User Stories
