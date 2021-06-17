@@ -231,6 +231,33 @@ Libraries and Frameworks
 
 ## Lighthouse testing
 
+### Lighthouse test results are below
+
+* Desktop test results
+
+* [Add category](/workspace/Dublin-slang/testing/lighthouse/desktop-addcategory.pdf)
+* [Add word](/workspace/Dublin-slang/testing/lighthouse/desktop-addword.pdf)
+* [Categories](/workspace/Dublin-slang/testing/lighthouse/desktop-categories.pdf)
+* [Edit category](/workspace/Dublin-slang/testing/lighthouse/desktop-editcategory.pdf)
+* [Edit word](/workspace/Dublin-slang/testing/lighthouse/desktop-editword.pdf)
+* [Glossary](/workspace/Dublin-slang/testing/lighthouse/desktop-glossary.pdf)
+* [Log in](/workspace/Dublin-slang/testing/lighthouse/desktop-login.pdf)
+* [Profile](/workspace/Dublin-slang/testing/lighthouse/desktop-profile.pdf)
+* [Register](/workspace/Dublin-slang/testing/lighthouse/desktop-register.pdf)
+* [Welcome](/workspace/Dublin-slang/testing/lighthouse/desktop-welcome.pdf)
+
+* Mobile test results
+
+* [Add category](/workspace/Dublin-slang/testing/lighthouse/mobile-addcategory.pdf)
+* [Add word](/workspace/Dublin-slang/testing/lighthouse/mobile-addword.pdf)
+* [Categories](/workspace/Dublin-slang/testing/lighthouse/mobile-categories.pdf)
+* [Edit category](/workspace/Dublin-slang/testing/lighthouse/mobile-editcategory.pdf)
+* [Edit word](/workspace/Dublin-slang/testing/lighthouse/mobile-editword.pdf)
+* [Glossary](/workspace/Dublin-slang/testing/lighthouse/mobile-glossary.pdf)
+* [Login](/workspace/Dublin-slang/testing/lighthouse/mobile-login.pdf)
+* [Profile](/workspace/Dublin-slang/testing/lighthouse/mobile-profile.pdf)
+* [Register](/workspace/Dublin-slang/testing/lighthouse/mobile-register.pdf)
+* [Welcome](/workspace/Dublin-slang/testing/lighthouse/mobile-welcome.pdf)
 
 ## Bugs
 
@@ -352,59 +379,59 @@ I worked my way up to phone,tablet and eventually to desktop.
 
 * Home page
 
-![image](validatortestingresults/index.png)
+![image](testing/index.png)
 
 * No errors.
 
 * Glossary page
 
- ![image](validatortestingresults/get_words.png)
+ ![image](testing/get_words.png)
 
 * add category page
 
-![image](validatortestingresults/add_category.png)
+![image](testing/add_category.png)
 
 no errors.
 
 * add word page
 
-![image](validatortestingresults/add_word.png)
+![image](testing/add_word.png)
 
 * no errors.
 
 * edit category page
 
-![image](validatortestingresults/edit_category.png)
+![image](testing/edit_category.png)
 
 no errors.
 
 * edit word page
 
-![image](validatortestingresults/edit_word.png)
+![image](testing/edit_word.png)
 
 * no errors.
 
 * get categories page
 
-![image](validatortestingresults/get_categories.png)
+![image](testing/get_categories.png)
 
 * no errors.
 
 * Log in page
 
-![image](validatortestingresults/login.png)
+![image](testing/login.png)
 
 * no errors.
 
 * register page
 
-![image](validatortestingresults/register.png)
+![image](testing/register.png)
 
 * no errors.
 
 * profile page
 
-![image](validatortestingresults/profile.png)
+![image](testing/profile.png)
 
 * no errors.
 
@@ -412,13 +439,13 @@ no errors.
 
 * Style.css
 
-![image](validatortestingresults/style.css.jpg)
+![image](testing/style.css.jpg)
 
 ### Javascript validator
 
 * Javascript
 
-![image](validatortestingresults/javascript.png)
+![image](testing/javascript.png)
 
 * No errors.
 
@@ -426,7 +453,7 @@ no errors.
 
 * Python
 
-![image](validatortestingresults/python.png)
+![image](testing/python.png)
 
 * No errors.
 
@@ -434,7 +461,7 @@ no errors.
 
 * Heroku app
 
-![image](validatortestingresults/herokuapp.png)
+![image](testing/herokuapp.png)
 
 * No errors.
 
@@ -448,25 +475,56 @@ no errors.
 ## Testing User Stories
 
 
-
-
-
 # Deployment
 
+This website was made with gitpod which is a cloud based IDE. Code was pushed to github by using the following commands outlined below.
 
-
+1. git add
+2. git status
+3. git commit -m "message of reason of commit goes here"
+4. git push.
 
 ## Deploy website to Github Pages
 
+The steps below outline how to deploy the website too github pages from github.
+
+1. Type github into browser
+2. Sign in with username and password
+3. Select repository you want to deploy github pages
+4. Select Travel Tips Ireland repository
+5. Select settings based on the far right of the menu
+6. Scroll down settings where you will see get to github pages towards the bottom of the page
+7. Select main branch from the drop menu that is provided
+8. Click to confirm using the save button on the right
+9. Travel Tips Ireland is now live on github pages
 
 ## Run Project With Gitpod
 
-
+1. Open the repository in GitHub markgordon22/Travel-Tips-Ireland.
+2. Click code button in green on the  right.
+3. Copy the url: 
+4. Copy and paste the url into the url bar of a fresh tab.
+5. Add gitpod.io/# at the beginning of the url copied from GitHub.
+6. A new workspace will then open up.
 
 ## How to Run This In A Local IDE
 
+1. Open  repository in GitHub markgordon22/Travel-Tips-Ireland.
+2. Click code button in green on the right.
+3. Copy URL from HTTPS section.
+4. Open terminal in your local IDE.
+5. Change your current working directory to where you wish the cloned file to be saved and allocated.
+6. You then type 'git clone' with the URL you copied off of GitHub.
+7. click enter and your own local clone will be created.
 
 ## Forking
+
+By forking the repository you can now make a copy of the repository to a github account to view, inspect without affecting or changing
+ the original respository. There are three steps involved in forking.
+
+ 1. Log into github with respective username and password and locate the repository that contains the project you wish to fork.
+ 2. On the very right of the page you will see a fork button just below the navbar and above the settings button.
+ 3. You now have a copy of the original repository in your github account which you can alter and make changes.
 
 
 
