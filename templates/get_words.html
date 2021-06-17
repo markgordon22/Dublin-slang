@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 <h3 class="black-text center-align">Irish Glossary</h3>
-<p class="black-text center-align">
+<h5 class="black-text center-align">
   Add your favourite word or search for a word below!
-</p>
+</h5>
 <!---Search for a word-->
 <div class="row card-panel">
   <form action="{{ url_for('search') }}" method="POST" class="col s12">
