@@ -503,7 +503,12 @@ The steps below outline how to deploy the website too github pages from github.
 
 ## Run Project With Gitpod
 
-
+1. Open the repository in GitHub markgordon22/Travel-Tips-Ireland.
+2. Click code button in green on the  right.
+3. Copy the url: 
+4. Copy and paste the url into the url bar of a fresh tab.
+5. Add gitpod.io/# at the beginning of the url copied from GitHub.
+6. A new workspace will then open up.
 
 ## How to Run This In A Local IDE
 
