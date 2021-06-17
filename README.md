@@ -529,16 +529,17 @@ The steps below outline how to deploy the website too github pages from github.
  2. On the very right of the page you will see a fork button just below the navbar and above the settings button.
  3. You now have a copy of the original repository in your github account which you can alter and make changes.
 
-
-
 # Credits
 
 ## Code
 
 ## Content
 
+* All words in glossary came from myself having already grown up with these words and phrases.
 
 ## Hero images
+
+* [leprachaun image](https://pumpkin-parcel.com/products/leprechan-wax-melts?pr_prod_strat=copurchase&pr_rec_pid=4859114520646&pr_ref_pid=6536302231622&pr_seq=uniform)
 
 
 ## Resources
