@@ -533,6 +533,8 @@ The steps below outline how to deploy the website too github pages from github.
 
 ## Code
 
+
+
 ## Content
 
 * All words in glossary came from myself having already grown up with these words and phrases.
@@ -544,6 +546,14 @@ The steps below outline how to deploy the website too github pages from github.
 
 ## Resources
 
+* [Code Institute tutor team](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopment/tutor) who gave me excellent guidance and advice
+* [Youtube](https://www.youtube.com/) was helpful for me to brush up on certain aspect of backend development after finishing the course material
+* [Slack](https://slack.com/intl/en-ie/) helped me get around certain aspects of development in terms of the lessons and challenges.
+
 
 
 # Acknowledgements
+
+* My mentor Rohit Sharma for his amazing advice, help and feedback along the way.
+* The tutors at Code Institute for their amazing help and feedback when I was most stuck.
+* My friends and family for their continous support.
