@@ -522,6 +522,13 @@ The steps below outline how to deploy the website too github pages from github.
 
 ## Forking
 
+ By forking the repository you can now make a copy of the repository to a github account to view, inspect without affecting or changing
+ the original respository. There are three steps involved in forking.
+
+ 1. Log into github with respective username and password and locate the repository that contains the project you wish to fork.
+ 2. On the very right of the page you will see a fork button just below the navbar and above the settings button.
+ 3. You now have a copy of the original repository in your github account which you can alter and make changes.
+
 
 
 # Credits
