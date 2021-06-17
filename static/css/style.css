@@ -417,5 +417,14 @@ strong.black-text {
 	}
 }
 
+@media only screen and (min-width: 414px) {
+	strong.collap-word {
+		font-size: 20px;
+        
+	}
+}
+
+
+
 
 
