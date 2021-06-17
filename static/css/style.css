@@ -204,18 +204,6 @@ div.modal-footer {
 	background-color: rgb(255, 166, 0);
 }
 
-a.btn-small.white.black-text.modal-button.modal-close {
-	width: 60px;
-	display: block;
-	margin: auto;
-}
-
-a.btn-small.black.white-text.modal-button {
-	width: 20px;
-	display: block;
-	margin: auto;
-}
-
 
 /*---button element---*/
 
@@ -419,10 +407,30 @@ strong.black-text {
 
 @media only screen and (min-width: 414px) {
 	strong.collap-word {
-		font-size: 20px;
+		font-size: 17px;
         
 	}
 }
+
+@media only screen and (max-width: 414px) {
+	.collapsible-header {
+		height: 150px;
+        
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	h4.black-text{
+		font-size: 22px;
+        
+	}
+}
+
+
+
+
+
+
 
 
 
