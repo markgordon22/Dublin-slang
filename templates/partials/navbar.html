@@ -1,4 +1,7 @@
 <!---Idea of placing navbar in partials was from Task mini project-->
+{% if 'user' not in session %}
+<li><a href="{{ url_for('home') }}" class="white-text nav-link">Welcome</a></li>
+{% endif %}
 <li><a href="{{ url_for('get_words') }}" class="white-text nav-link">Glossary</a></li>
 {% if session.user %}
 <!-- user is logged-in -->
@@ -11,7 +14,6 @@
 <li><a href="{{ url_for('logout') }}" class="white-text nav-link">Log Out</a></li>
 {% else %}
 <!-- user is logged-out -->
-<li><a href="{{ url_for('home') }}" class="white-text nav-link">Welcome</a></li>
 <li><a href="{{ url_for('login') }}" class="white-text nav-link">Log In</a></li>
 <li><a href="{{ url_for('register') }}" class="white-text nav-link">Register</a></li>
 {% endif %}
