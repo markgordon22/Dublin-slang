@@ -533,11 +533,17 @@ The steps below outline how to deploy the website too github pages from github.
 
 ## Code
 
+* [CSS Materialize](https://materializecss.com/) code was copied in order to create items such as collapsible accordion on the glossary page, navbar,footer and cards
+on the categories page.
 
+* Task Manager Mini project was a staple for the site created. Code was used from this project which was modified and altered for the site's
+needs. Later on in the project we were given an update on the Task Manager Mini project where Tim introduced defensive programming in terms of modals in a
+partial folder which was also used and modified for the site's needs. Likewise, Tim introduced a login decorator where users must be logged in
+to view a page on the site. This was to enhance user safety and security. This was also used for the site.
 
 ## Content
 
-* All words in glossary came from myself having already grown up with these words and phrases.
+* All words in glossary came from myself having already grown up in Ireland with these words and phrases used in everyday life.
 
 ## Hero images
 
@@ -549,7 +555,6 @@ The steps below outline how to deploy the website too github pages from github.
 * [Code Institute tutor team](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopment/tutor) who gave me excellent guidance and advice
 * [Youtube](https://www.youtube.com/) was helpful for me to brush up on certain aspect of backend development after finishing the course material
 * [Slack](https://slack.com/intl/en-ie/) helped me get around certain aspects of development in terms of the lessons and challenges.
-
 
 
 # Acknowledgements
