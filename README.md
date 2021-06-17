@@ -266,6 +266,24 @@ Solution - I played around with the code and put the if statement inside the for
 
 ## Responsiveness Testing
 
+Responsiveness of the site was carried out with the use of the devices in chrome developer tools. 
+They included the following outlined below with responsiveness result.
+
+* Moto G4 - Successful
+* Iphone 4 - Successful
+* Galaxy s5 - Successful
+* Pixel 2 - Successful
+* Pixel 2 XL - Successful
+* Iphone 5/SE - Successful
+* Iphone 6/7/8 - Successful
+* Iphone 6/7/8 plus - Successful
+* Iphone X - Successful
+* Ipad - Successful
+* Ipad Pro - Successful
+* Surface Duo - Successful
+* Galaxy Fold - Successful
+
+Desktop responsiveness - successful
 
 
 ## Usability Testing
