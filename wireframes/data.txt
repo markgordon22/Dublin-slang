@@ -1,0 +1,27 @@
+Irish Slang Collections
+
+Words Collection:
+
+"words":{
+    "_id": "ObjectId()"    
+    "category_name": "<string>",
+    "word_name": "<string>",
+    "word_def": "<string>",
+    "definition_example": "<string>",
+    "created_by": "<string>",
+}
+
+Categories Collection:
+
+"categories": {
+    "_id": "ObjectId()" 
+    "category_name": "<string>",
+}
+
+Users Collection:
+
+"users": {
+    "_id": "ObjectId()"   
+    "username": <string>
+    "password": <string>
+}
