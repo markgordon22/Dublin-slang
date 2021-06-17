@@ -414,7 +414,7 @@ strong.black-text {
 
 @media only screen and (max-width: 414px) {
 	.collapsible-header {
-		height: 150px;
+		height: 100px;
         
 	}
 }
