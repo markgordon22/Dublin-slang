@@ -129,7 +129,7 @@ Click [here](https://github.com/markgordon22/irish-slang/blob/master/static/img/
 * See wireframes [here](https://github.com/markgordon22/irish-slang/blob/master/wireframes/wireframes-irish-slang.pdf)
 
 
- # Features
+# Features
 
 * Features implemented for the website include the following.
 
