@@ -126,6 +126,7 @@ Click [here](https://github.com/markgordon22/irish-slang/blob/master/static/img/
 
 ## Wireframes
 
+* See wireframes [here](https://github.com/markgordon22/irish-slang/blob/master/wireframes/wireframes-irish-slang.pdf)
 
 
  # Features
@@ -232,6 +233,7 @@ Libraries and Frameworks
 
 
 
+
 ## Bugs
 
 Bugs I encountered along with a solution.
@@ -256,12 +258,9 @@ Solution: Used a login required decorator so user must be logged in order to acc
 6. My else statement on the profile page was not working despite the code seemingly to be correct. 
 Solution - I played around with the code and put the if statement inside the for loop. Once this happened the else statment was operating as it was intended.
 
+
 ## Functionality Testing
 
-
-
-
-**Contact page**
 
 
 ## Responsiveness Testing
