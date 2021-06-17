@@ -234,6 +234,7 @@ Libraries and Frameworks
 
 
 
+
 ## Bugs
 
 Bugs I encountered along with a solution.
@@ -261,7 +262,64 @@ Solution - I played around with the code and put the if statement inside the for
 
 ## Functionality Testing
 
+### Welcome page
 
+* Navbar links all work with no faults and navigate to their correct destination. Hero image is looking well with no stretching.
+  links are working well with no faults and lead to their correct destination. Footer links to external Irish slang websites
+  are working well along with the social media icons working fine.
+
+### Glossary page
+
+* Navbar and footer links are all working fine. When user searches a word it successfully reveals the word or displays an "no results found" message.
+  Collapsible header and body are looking well and working fine. When user clicks on the icon in the collapsibe header, the body becomes visible showing the category word,
+  an example, definition and the author of the word. The delete and edit buttons are working and carrying out their intended purpose.
+  Add word button will lead user to add word page. Modals are present when the user becomes unsure of actually deleting a word - defensive programming purposes.
+
+### Profile page
+
+* Navbar and footer links are working fine. If user has added a word, then that word will display on their profile, along with the edit and the delete
+ buttons which are working perfectly. However, if the user has not added a word, then a card-panel will display on screen saying that the user has no words added. If
+ user wants to add a word then the add word button will lead them to add word page. If user wants to terminate their profile,
+ they can carry that out and press the delete button where a confirmation modal will pop asking user if they are totally certain of deleting 
+ their profile. 
+
+### Add word page
+
+* Navbar and footer links are working well and correctly. User can add a word by selecting a category from the dropdown and insert the definition,
+example in the respective inputs. The add word button will send the new word added to the user profile and glossary page. A flash meesage will appear
+that the user has created a word. The cancel button will be able to redirect the user back to the glossary page.
+
+### Manage categories
+
+* Navbar and footer links are both working right. Admin can successfully edit or delete categories displayed, by clicking on one of the respective
+buttons. Add category button will redirect admin to add category page.
+
+### Add category
+
+* Navbar and footer links are working. Add category button working fine and when user adds a category, a flash message will pop up that admin
+has successfully created a new category. The cancel button will lead admin to redirect back to the categories page with no flash message.
+
+### Edit category
+
+* Navbar and footer links are working correctly. Edit category button once clicked which is followed by a flash message saying 
+that a category has been updated. Cancel button will lead user back to the categories page with no flash message.
+
+### Edit word
+
+* Once user clicks on the edit button in their profile for a word it will lead to the edit word page. Here, there is a select element and 3 inputs.
+ The user must insert text into all inputs and select a category in the select element at the top of the card-panel. A flash
+ message will pop out that the word has been updated. The user may wish not to edit where they can 
+ simply return to the glossary page with no flash message by clicking the cancel button.
+
+### Log in page
+
+* The user is directed to the login page from the welcome page. The user must enter a username and password that corresponds to the minimumlength,
+maximum length and pattern. Once the user successfully logs in they are redirected to their designated profile page with a welcome flash message.
+
+### Register page
+
+* User is directed to the register page from the welcome page. Similar to the log in page, the user must adhere to the guidelines surrounding
+username and passwords. Once user register they get redirected to their profile page with a welcome flash message.
 
 ## Responsiveness Testing
 
@@ -280,12 +338,12 @@ They included the following outlined below with responsiveness result.
 * Ipad - Successful
 * Ipad Pro - Successful
 * Surface Duo - Successful
-* Galaxy Fold - Successful
 
 Desktop responsiveness - successful
 
 
 ## Usability Testing
+
 
 
 
