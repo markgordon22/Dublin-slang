@@ -235,6 +235,7 @@ Libraries and Frameworks
 
 
 
+
 ## Bugs
 
 Bugs I encountered along with a solution.
@@ -344,8 +345,10 @@ Desktop responsiveness - successful
 
 ## Usability Testing
 
-
-
+* The site was shared with family, friends and my mentor who provided me with great feedback. Many things on the site including defensive 
+programming was an issue from the beginning but it was mainly getting the site responsive on all devices that were tested. A lot of people
+came back to me saying that the text content was to small on smaller devices and that it was quite ineligible and hard to read. When building the site
+I worked my way up to phone,tablet and eventually to desktop.
 
 ## Testing Validators
 
