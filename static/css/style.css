@@ -289,6 +289,15 @@ a.btn-small.black.white-text.modal-trigger {
 	margin-left: 50px;
 	font-family: 'Mate SC', serif;
     margin-right: 10px;
+    margin-top: 7px;
+   
+}
+
+/*---edit button collapsible header----*/
+a.btn-small.white.black-text {
+	font-family: 'Mate SC', serif;
+    margin-right: 10px;
+    margin-top: 7px;
    
 }
 
