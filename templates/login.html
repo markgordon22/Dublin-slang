@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+<!--login form with passowrd and username inputs-->
 <h3 class="center-align">Log in</h3>
 <div class="row">
   <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
@@ -29,6 +30,7 @@
     </div>
   </form>
 </div>
+<!---If user already has an account-->
 <div class="row">
   <div class="col s12">
     <p class="center-align">

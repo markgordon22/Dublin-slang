@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Irish Slang words">
+    <!---Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
+    integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
+    <!---Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <!---CSS materialize-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!---CSS stylesheet-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
@@ -17,7 +21,7 @@
   </head>
   <body>
     <header>
-      <!-- top navbar -->
+      <!-- navbar -->
       <nav class="nav-extended text-shadow green">
         <div class="nav-wrapper">
           <a href="{{ url_for('home') }}" class="brand-logo">Irish Slang</a>
@@ -27,7 +31,7 @@
           </ul>
         </div>
       </nav>
-      <!-- mobile sidenav -->
+      <!-- mobile sidenav from CSS materialize -->
       <ul class="sidenav text-shadow green" id="mobile-demo">
         {% include "partials/navbar.html" %}
       </ul>
@@ -42,6 +46,7 @@
       {% block content %}
       {% endblock %}
     </main>
+    <!---Footer from CSS materialize--->
     <footer class="page-footer green">
       <div class="container" style="min-height: 80px;">
         <div class="row">

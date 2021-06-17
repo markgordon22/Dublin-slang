@@ -4,6 +4,7 @@
 <p class="black-text center-align">
   Add your favourite word or search for a word below!
 </p>
+<!---Search for a word-->
 <div class="row card-panel">
   <form action="{{ url_for('search') }}" method="POST" class="col s12">
     <div class="row valign-wrapper center-align">
@@ -18,6 +19,7 @@
     </div>
   </form>
 </div>
+<!---Collapsible from CSS materialize-->
 {% if words|length > 0 %}
 <ul class="collapsible">
   {% for word in words %}
@@ -40,6 +42,7 @@
   </li>
   {% endfor %}
 </ul>
+<!---In case user searches. word not in database-->
 {% else %}
 <h3 class="red-text center-align">Ah jayney mac no results found :(</h3>
 {% endif %}
