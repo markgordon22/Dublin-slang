@@ -30,11 +30,11 @@
         {% include "partials/modals.html" %}
       </div>
       <div class="collapsible-body orange lighten-4">
-        <strong>Category: {{ word.category_name }}</strong>
-        <p>word: {{ word.word_name }}</p>
-        <p>Definition: {{ word.word_def }}</p>
-        <p>example: {{ word.definition_example }}</p>
-        <p><em>Created by: {{ word.created_by }}</em></p>
+        <strong class="collap-text"><b>Category: {{ word.category_name }}</b></strong>
+        <p class="collap-text">word: {{ word.word_name }}</p>
+        <p class="collap-text">Definition: {{ word.word_def }}</p>
+        <p class="collap-text">example: {{ word.definition_example }}</p>
+        <p class="collap-text"><em>Created by: {{ word.created_by }}</em></p>
       </div>
     </li>
   {% endfor %}
