@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 <h3 class="black-text center-align">Irish Glossary</h3>
-<h5 class="black-text center-align">
+<p class="black-text center-align">
   Add your favourite word or search for a word below!
-</h5>
+</p>
 <div class="row card-panel">
   <form action="{{ url_for('search') }}" method="POST" class="col s12">
     <div class="row valign-wrapper center-align">
       <div class="input-field col s12 m9">
         <i class="fas fa-search prefix black-text text-darken-3"></i>
         <input type="text" name="query" id="query" class="validate" required>
-        <label for="query" class="black-text search-word-label">Search Word</label>
+        <label for="query" class="black-text">Search Word</label>
       </div>
       <button type="submit" class="black btn white-text search-word-btn">
       <i class="fas fa-search"></i></button>
@@ -21,26 +21,27 @@
 {% if words|length > 0 %}
 <ul class="collapsible">
   {% for word in words %}
-    <li>
-      <div class="collapsible-header white-text">
-        <i class="fas fa-caret-down black-text"></i><strong class="black-text collap-word">{{ word.word_name }}</strong>
+  <li>
+    <div class="collapsible-header">
+        <i class="fas fa-caret-down"></i><strong class="black-text">{{ word.word_name }}</strong>
+        {% if session.user|lower == word.created_by|lower or session.user == "admin" %}
         <a href="#modal-{{ word._id }}" class="btn-small black white-text modal-trigger">Delete</a>
-        <a href="{{ url_for('edit_word', word_id=word._id) }}"
-          class="btn-small white black-text">Edit</a>
+        <a href="{{ url_for('edit_word', word_id=word._id) }}" class="btn-small white black-text">Edit</a>
         {% include "partials/modals.html" %}
-      </div>
-      <div class="collapsible-body orange lighten-4">
-        <strong class="collap-text"><b>Category: {{ word.category_name }}</b></strong>
-        <p class="collap-text">word: {{ word.word_name }}</p>
-        <p class="collap-text">Definition: {{ word.word_def }}</p>
-        <p class="collap-text">example: {{ word.definition_example }}</p>
-        <p class="collap-text"><em>Created by: {{ word.created_by }}</em></p>
-      </div>
-    </li>
+        {% endif %}
+    </div>
+    <div class="collapsible-body orange lighten-4">
+      <strong>Category: {{ word.category_name }}</strong>
+      <p>word: {{ word.word_name }}</p>
+      <p>Definition: {{ word.word_def }}</p>
+      <p>example: {{ word.definition_example }}</p>
+      <p><em>Created by: {{ word.created_by }}</em></p>
+    </div>
+  </li>
   {% endfor %}
 </ul>
 {% else %}
-<h3 class="red-text center-align">Ah jayney mac pal! no results found :(</h3>
+<h3 class="red-text center-align">Ah jayney mac no results found :(</h3>
 {% endif %}
 <div class="container">
 <div class="row">
