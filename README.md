@@ -475,6 +475,9 @@ no errors.
 ## Testing User Stories
 
 
+
+
+
 # Deployment
 
 This website was made with gitpod which is a cloud based IDE. Code was pushed to github by using the following commands outlined below.
@@ -500,31 +503,12 @@ The steps below outline how to deploy the website too github pages from github.
 
 ## Run Project With Gitpod
 
-1. Open the repository in GitHub markgordon22/Travel-Tips-Ireland.
-2. Click code button in green on the  right.
-3. Copy the url: 
-4. Copy and paste the url into the url bar of a fresh tab.
-5. Add gitpod.io/# at the beginning of the url copied from GitHub.
-6. A new workspace will then open up.
+
 
 ## How to Run This In A Local IDE
 
-1. Open  repository in GitHub markgordon22/Travel-Tips-Ireland.
-2. Click code button in green on the right.
-3. Copy URL from HTTPS section.
-4. Open terminal in your local IDE.
-5. Change your current working directory to where you wish the cloned file to be saved and allocated.
-6. You then type 'git clone' with the URL you copied off of GitHub.
-7. click enter and your own local clone will be created.
 
 ## Forking
-
-By forking the repository you can now make a copy of the repository to a github account to view, inspect without affecting or changing
- the original respository. There are three steps involved in forking.
-
- 1. Log into github with respective username and password and locate the repository that contains the project you wish to fork.
- 2. On the very right of the page you will see a fork button just below the navbar and above the settings button.
- 3. You now have a copy of the original repository in your github account which you can alter and make changes.
 
 
 
