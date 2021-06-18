@@ -1,3 +1,5 @@
+//Jquery to activate materialize components//
+
 $(document).ready(function() {
     $('.sidenav').sidenav({
         edge: "left"
@@ -6,6 +8,8 @@ $(document).ready(function() {
     $('select').formSelect();
     $('.modal').modal();
 });
+
+//for category select element//
 
 validateMaterializeSelect();
 
