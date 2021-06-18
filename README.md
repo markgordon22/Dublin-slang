@@ -554,7 +554,81 @@ The steps below outline how to deploy the website too github pages from github.
  2. On the very right of the page you will see a fork button just below the navbar and above the settings button.
  3. You now have a copy of the original repository in your github account which you can alter and make changes.
 
- ## Deployment to Heroku
+ ## Requirements
+
+ To deploy on Heroku the following listed below are pivotal.
+
+ * [Git](https://git-scm.com/downloads)
+ * [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+ * [Python 3](https://www.python.org/downloads/)
+ * [PIP](https://pip.pypa.io/en/stable/cli/pip_install/)
+
+ 1. In order to install the requirements listed above you would need to type in your terminal window of your respective IDE
+ pip3 install -r requirements.txt.
+
+ 2. Make a database for your project with MongoDB.
+ 
+ * Signup Or Login to MongoDB depending on if you already have an account
+ * After logging/signing in the next step is to make a cluster then a database.
+ * Create the collections in your respective database.
+   - Categories
+   - users
+   - words.
+
+3. Environment variables in the env.py file.
+   - If by default you did not get a .gitignore file in your template, simply type 'touch .gitignore'.
+   - Create a file called env.py. This file will hold your environment variables. Your env.py file should
+   include the following below.
+   
+   import os os.environ.setdefault("IP", "0.0.0.0")
+   os.environ.setdefault("PORT", "5000")
+   os.environ.setdefault("SECRET_KEY", "YOUR_SECRET_KEY")
+   os.environ.setdefault("MONGO_URI", "YOUR_MONGODB_URI")
+   os.environ.setdefault("MONGO_DBNAME", "YOUR_DATABASE_NAME")
+
+   User must update highly confidentail information such as passwords and secret key. These details must be kept disclosed and are not
+   displayed in this repo for safety and security purposes. You then must add your new env.py file to your .gitignore file.
+
+4. The application can now be run with the use of the command python3 app.py.
+
+## Heroku deployment
+
+1. The first step is to make a requirements.txt file and a Procfile. Those files will allow Heroku understand the dependencies that are
+required to successfully run the application, and also inform Heroku the file to run in order to launch the application.
+
+2. Type 'pip3 freeze --local > requirements.txt'.
+
+3. Create a procfile by typing 'echo web: python app.py > Procfile'.
+
+4. Once these are made you can see a list of dependencies in the requirements.txt file.
+
+### Create an app on heroku
+
+Follow thse steps to create an app on Heroku
+
+1. Register/sign in to Heroku depending on if you have an account.
+
+2. Click 'Create New App' button.
+
+3. Choose a name for your app with no spaces or captilal letters, Select your local region of where you are based, then you can click
+'create app'.
+
+4. Go to the navbar and select the 'Deploy' tab, then click 'Connect to GitHub' in the 'Deployment method' section.
+
+5. Set up automatic deployment from your GitHub account via your Heroku account by clicking the 'Connect to GitHub' button in the middle.
+
+6. Look for the GitHub repo that holds the name of your repo, then click 'connect'. Before you click the Enable Automatic Deploys button,
+ double check the following below has been carried out:
+
+ - In the 'Reveal Config Vars', insert the variables without quotation marks which are based in your local 'env.py' file. These
+   variables are stored safely in this location because they hold data sensitive information such as the password to the MongoDB database 
+
+- make sure the Procfile and requirements.txt have been added to the staging area to Github.
+
+- click the "Enable Automatic Deploys" and "Deploy Branch". The new app will be created and can be viewed by simply clicking 'open app'.
+
+
+
 
 
 
