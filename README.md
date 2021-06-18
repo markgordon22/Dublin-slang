@@ -852,6 +852,12 @@ was also used from Task manager Mini project.
 
 * All words in glossary came from myself having already grown up in Ireland with these words and phrases used in everyday life.
 
+Footer links
+
+1. [Vagabon tour of Ireland](https://vagabondtoursofireland.com/irish-phrases-sayings-slang)
+2. [The Irish road trip](https://www.theirishroadtrip.com/irish-slang-words/)
+3. [Travel around Ireland](https://travelaroundireland.com/irish-slang-words-and-phrases-and-their-meanings/)
+4. [Irish Central](https://www.irishcentral.com/travel/travel-tips/irish-words-phrases-before-you-visit)
 
 
 ## Hero images
