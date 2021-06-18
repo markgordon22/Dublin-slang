@@ -15,6 +15,7 @@
   * [Colours](#colours)
   * [Imagery](#imagery)
   * [Wireframes](#wireframes)
+  * [Data schema](#data-schema)
 - [Features](#features)
 - [Features left to implement](#features-left-to-implement)
 - [Technologies](#technologies)
@@ -47,7 +48,8 @@
 
 ## The project Goal  
 * The goal of this project is to creare a fictional glossary/dictionary website for words that are spoken on a daily basis among Irish people. It is aimed at people who wish to
-visit Ireland in the future and have an interest or an intrigue in words/phrases Irish people use.
+visit Ireland in the future and have an interest or an intrigue in words/phrases Irish people use. I want to create a website that is fun to use for the user
+and that their personal details are secure.
 
 
 # User Stories
@@ -127,6 +129,28 @@ Click [here](https://github.com/markgordon22/irish-slang/blob/master/static/img/
 ## Wireframes
 
 * See wireframes [here](https://github.com/markgordon22/irish-slang/blob/master/wireframes/wireframes-irish-slang.pdf)
+
+## Data schema
+
+* For the data schema there were three collections used to carry out the site's operations. They are listed below
+
+1. Categories
+2. users
+3. Words
+
+The categories collection have the following fields.
+
+-> _id: objectID(string) ,category_name: "string"
+
+The users collection have the following fields.
+
+-> _id: objectID(string), username: "string", password: "string".
+
+The words collection have the following fields.
+
+-> _id: objectID(string), category_name: "string", word_name: "string, word_def: "string", definition_example, created_by: "string".
+
+Text version of the schema can be viewed [here](/workspace/Dublin-slang/wireframes/data.txt)
 
 
 # Features
@@ -528,6 +552,10 @@ The steps below outline how to deploy the website too github pages from github.
  1. Log into github with respective username and password and locate the repository that contains the project you wish to fork.
  2. On the very right of the page you will see a fork button just below the navbar and above the settings button.
  3. You now have a copy of the original repository in your github account which you can alter and make changes.
+
+ ## Deployment to Heroku
+
+
 
 # Credits
 
