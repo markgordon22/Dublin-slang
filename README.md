@@ -28,17 +28,20 @@
   * [Testing Validators](#testing-validators)
   * [Compatability Testing](#compatability-testing)
   * [Testing User Stories](#testing-user-stories)
+  * [Crud Testing](#crud-testing)
 - [Deployment](#deployment)
   * [Deploy website to Github pages](#deploy-website-to-github-pages)
   * [Run Project With Gitpod](#run-project-with-gitpod)
   * [How to Run This In A Local IDE](#how-to-run-this-in-a-local-ide)
   * [Forking](#forking)
+  * [Requirements](#requirements)
+  * [Heroku deployment](#heroku-deployment)
+  * [Make an app via Heroku](#make-an-app-via-heroku)
+
 - [Credits](#credits)
   * [Code](#code)
   * [Content](#content)
   * [Hero images](#hero-images)
-  * [About page images](#about-page-images)
-  * [Our Tips page images](#our-tips-page-images)
   * [Resources](#resources)
 
 - [Acknowledgements](#acknowledgements)
@@ -47,7 +50,7 @@
 # User Experience
 
 ## The project Goal  
-* The goal of this project is to creare a fictional glossary/dictionary website for words that are spoken on a daily basis among Irish people. It is aimed at people who may wish to
+* The goal of this project is to create a fictional glossary/dictionary website for words that are spoken on a daily basis among Irish people. It is aimed at people who may wish to
 visit Ireland in the future and have an interest or an intrigue in words/phrases Irish people use. I want to create a website that is fun to use for the user
 and that their personal details are secure.
 
@@ -77,8 +80,8 @@ and that their personal details are secure.
 ## Requirements
 
 * To navigate around the site in an easy fashion with no broken internal links
-* All features such as login, register, contact form, collapsible and card-panels to be operating efficentley
-* All text content to eligible, readbale and viewable across different devices such as desktop, tablet and mobile.
+* All features such as login, register, collapsible and card-panels to be operating efficentley
+* All text content to eligible, readable, viewable across different devices such as desktop, tablet and mobile.
 * for website to have a high level of safety and security when user is logged in, the copied url once pasted when the
   url has logged out will be redirected back to the log in page.
 
@@ -86,7 +89,7 @@ and that their personal details are secure.
 
 * Navigation of the website is working appropriatley and efficentley with no broken internal links.
 * All features above in requirements section is working appropriatley.
-* Text content is easy to read,view across all devices
+* Text content is easy to read,view across all devices.
 * Website is highly secured with user's profile secured against intrusion from other users, vistors to the site.
 
 # Design Choices
@@ -94,7 +97,7 @@ and that their personal details are secure.
 * Considering this is an Irish slang dictionary I wanted the color scheme to adopt the tricolor flag colors of Ireland which is green, white and orange.
   The feeling was that it was the most appropriate design choice of colors as users will instantly feel the connection between the Irish tricolors and the slang glossary.
   An image of a leprachaun is present on the homepage to offer imagery but to also offer a well reknowned representation of Irish fiction.
-  Features such as login, register search bar and collapsible glossary are styled similarly for consistency in design. Collapsible, footer,buttons and navbar and sidenav are taken from
+  Features such as login, register, search bar, collapsible are styled similarly for consistency in design. Collapsible, footer,buttons and navbar and sidenav are taken from
   [CSS Materialize](https://materializecss.com/) for instant responsiveness and positive looking user interface.
 
 
@@ -116,7 +119,7 @@ Irish slang dictionary. To view color scheme click [here](https://github.com/mar
 
 ## Imagery
 
-* The sole image used for the site was a hero image on the home page of a leprachaun with a pint of beer. Once the user accesses home page and begins
+* The sole image used for the site was a hero image on the home page of a leprachaun with a pint of beer. Once the user accesses welcome page and begins
 their journey through the site they will see the image. Image of the leprachaun was used as it fits one of the stereotypes that leprachauns exist.
 Image of the leprachaun evokes the feeling of Ireland instantly to the user that can not be carried out with plain text. 
 Click [here](https://github.com/markgordon22/irish-slang/blob/master/static/img/leprachaunimage.jpg) to see the image.
@@ -124,6 +127,10 @@ Click [here](https://github.com/markgordon22/irish-slang/blob/master/static/img/
 ## Wireframes
 
 * See wireframes [here](https://github.com/markgordon22/irish-slang/blob/master/wireframes/wireframes-irish-slang.pdf)
+
+* Updates
+
+- Removed contact button on profile page as contact form was retracted from site.
 
 ## Data schema
 
@@ -237,7 +244,7 @@ Libraries and Frameworks
 * [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/)
     - Password security to authenticate site.
 * [Markdown](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax) 
-    - Assisted with links site elements such as images,content,wireframes and code sources used.
+    - Assisted with site's link elements such as images,content,wireframes and code sources used.
 * [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/) 
     - to generate own MarkDown TOC online.
 *  Chrome dev tools to detect bugs in the code.
@@ -505,7 +512,7 @@ User is logged out navbar
 
 ![image](testing/userstories/userstory1(2).png)
 
-The navbar is fully responsive so all navlinks will always be on display. all navlinks have been tested to confirm they lin to their correct
+The navbar is fully responsive so all navlinks will always be on display. all navlinks have been tested to confirm they link to their correct
 destination.
 
 2. I want to be able to search for words commonly used in Ireland.
@@ -593,18 +600,18 @@ delete profile. Once user clicks button a modal will pop out asking the user if 
 
 User can see words added by other users but can not edit or delete those words. Pictured below user can see words added by other users.
 
-![image](testing/userstories/reguserstory4(1)
+![image](testing/userstories/reguserstory4.png)
 
 ## Site owner stories
 
 1. To give site accessibility even if user has not created an account.
 
 Despite user not having an account the user can still browse through the dictionary. See below that no button can be edited or deleted because the user
-can't make a wor without making an account.
+can't make a word without making an account.
 
 ![image](testing/userstories/souserstory.png)
 
-2. To allow users to soley edit, delete their own words that they have added. Here the user mark2000 has only 1 word added and can only edit hsi own word.
+2. To allow users to soley edit, delete their own words that they have added. Here the user mark2000 has only 1 word added and can only edit his own word.
 
 ![image](testing/userstories/souserstory2.png)
 
@@ -637,7 +644,7 @@ I  am going to add the word "banger" to the glossary as it's not been added yet 
 
 ![image](testing/crudtesting/readimg2.png)
 
-Pictured below the word "banger" has officially been created and is present in the glossary.
+Pictured below the word "banger" has officially been created and is present in the glossary (3 images down).
 
 ![image](testing/crudtesting/readimg1.png)
 
@@ -650,6 +657,8 @@ Update
 If I wish to update a word that I have added to the dictionary I can navigate to the profile page or the glossary, find the word I wish to update and
 click the edit button on the collapsible header. Once I click the edit button I will redirected to the edit word page and I can see all the inputs
 that were inserted for that word. Below I simply redefined the word banger to "a very old car".
+
+![image](testing/crudtesting/editword.png)
 
 ![image](testing/crudtesting/updateimg.png)
 
@@ -683,6 +692,8 @@ Once I click add category I can add a category, I will give it a football catego
 And now I have football as category here on my category page.
 
 ![image](testing/crudtesting/categories3.png)
+
+![image](testing/crudtesting/updatecat2.png)
 
 Now I'm going to update the new football category and call it "football terms"
 
@@ -810,7 +821,7 @@ required to successfully run the application, and also inform Heroku the file to
 
 4. Once these are made you can see a list of dependencies in the requirements.txt file.
 
-### Create an app on heroku
+### Make an app via Heroku
 
 Follow thse steps to create an app on Heroku
 
