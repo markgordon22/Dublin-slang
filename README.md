@@ -132,7 +132,7 @@ Click [here](https://github.com/markgordon22/irish-slang/blob/master/static/img/
 
 ## Data schema
 
-* For the data schema there were three collections used to carry out the site's operations. They are listed below
+For the data schema there were three collections used to carry out the site's operations. They are listed below
 
 1. Categories
 2. users
@@ -195,6 +195,7 @@ Text version of the schema can be viewed [here](/workspace/Dublin-slang/wirefram
 Libraries and Frameworks
 
 * [Am I Responsive](http://ami.responsivedesign.is/) Used to create a mockup of website.
+*  [Pip3](https://pypi.org/project/pip/) to install Python modules from the command line.
 * [Autoprefixer CSS Online](https://autoprefixer.github.io/)
     -  used to parse project CSS and add vendor prefixes.
 * [BSon](http://bsonspec.org/)
