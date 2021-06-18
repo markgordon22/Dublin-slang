@@ -653,6 +653,58 @@ that were inserted for that word. Below I simply redefined the word banger to "a
 
 ![image](testing/crudtesting/updateimg.png)
 
+Delete
+
+If I don't want the word "banger" to be based in the glossary anymore I can just click the delete button in the collapsible header.
+A modal will pop out once delete button is clicked asking the user if I wish to delete the word. Pictured below is the modal.
+
+![image](testing/crudtesting/deleteimg1.png)
+
+Below I can see that the word "banger" has been removed from the glossary.
+
+![image](testing/crudtesting/deleteim2.png)
+
+I can also carry our delete operations aswell. Pictured below is the modal that pops out once clicking the delete profile button.
+
+![image](testing/crudtesting/deleteimg3.png)
+
+Finally I can then confirm to delete my profile and I will then be redirected to the login page with a goodbye flash message.
+
+![image](testing/crudtesting/deleteimg4.png)
+
+The admin can also carry out these operations with the categories on the categories page. Pictured below is the categories page.
+
+![image](testing/crudtesting/category.png)
+
+Once I click add category I can add a category, I will give it a football category.
+
+![image](testing/crudtesting/category1.png)
+
+And now I have football as category here on my category page.
+
+![image](testing/crudtesting/categories3.png)
+
+Now I'm going to update the new football category and call it "football terms"
+
+![image](testing/crudtesting/updatecategory.png)
+
+Finally I can then delete the category "football terms" to delete it from the categories collection.
+
+![image](testing/crudtesting/deletecategory.png)
+
+I now have the original categories I had from the beginning.
+
+![image](testing/crudtesting/deleteconfirmation.png)
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -799,6 +851,8 @@ was also used from Task manager Mini project.
 ## Content
 
 * All words in glossary came from myself having already grown up in Ireland with these words and phrases used in everyday life.
+
+
 
 ## Hero images
 
