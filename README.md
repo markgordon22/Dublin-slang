@@ -291,12 +291,12 @@ Solution - I contacted tutor support about this and they decided it be best to g
 Solution: Decreased padding of buttons and font-size so that they will take up less space on the collapsible header.
 
 4. Unsure of how to go about implementing defensive programming in terms of using modals for the words in case a user wishes to delete a word.
-Solution: Tim from code Institute tutor team gave us a great insight of to solve this in a masterclass by giving a modal id of id="modal-{{ word._id }}"
-This will activate a modal on any word once the delete button is clicked.
+Solution: Tim from Code Institute's tutor team gave us a great insight of how to solve this in the Task Manager Mini project by giving a modal id of id="modal-{{ word._id }}"
+This will activate a modal on any word in the database with that id once the delete button is clicked.
 
 5. Once user copies and pastes a url off a specific page on the site, logs out and then tries to paste the url into the browser, the page will load
 despite the user not having to log in which reduces user safety and security.
-Solution: Used a login required decorator so user must be logged in order to access the site's page [see here for code used](https://flask.palletsprojects.com/en/2.0.x/patterns/viewdecorators/)
+Solution: From Task Manager Mini project again, I used the login required decorator so user must be logged in order to access the site's page [see here for code used](https://flask.palletsprojects.com/en/2.0.x/patterns/viewdecorators/)
 
 6. My else statement on the profile page was not working despite the code seemingly to be correct. 
 Solution - I played around with the code and put the if statement inside the for loop. Once this happened the else statment was operating as it was intended.
@@ -627,10 +627,11 @@ Follow thse steps to create an app on Heroku
 * [CSS Materialize](https://materializecss.com/) code was copied in order to create items such as collapsible accordion on the glossary page, navbar,footer and cards
 on the categories page.
 
-* Task Manager Mini project was a staple for the site created. Code was used from this project which was modified and altered for the site's
+* Task Manager Mini project was a staple for the site created. Code was used from this project, specifically the app.py which was modified and altered for the site's
 needs. Later on in the project we were given an update on the Task Manager Mini project where Tim introduced defensive programming in terms of modals in a
 partial folder which was also used and modified for the site's needs. Likewise, Tim introduced a login decorator where users must be logged in
-to view a page on the site. This was to enhance user safety and security. This was also used for the site.
+to view a page on the site. This was to enhance user safety and security. This was also used for the site. Javascript for the category select
+was also used from Task manager Mini project.
 
 ## Content
 
@@ -640,10 +641,9 @@ to view a page on the site. This was to enhance user safety and security. This w
 
 * [leprachaun image](https://pumpkin-parcel.com/products/leprechan-wax-melts?pr_prod_strat=copurchase&pr_rec_pid=4859114520646&pr_ref_pid=6536302231622&pr_seq=uniform)
 
-
 ## Resources
 
-* [Code Institute tutor team](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopment/tutor) who gave me excellent guidance and advice
+* [Code Institute tutor team](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopment/tutor) who gave me excellent guidance and advice as always.
 * [Youtube](https://www.youtube.com/) was helpful for me to brush up on certain aspect of backend development after finishing the course material
 * [Slack](https://slack.com/intl/en-ie/) helped me get around certain aspects of development in terms of the lessons and challenges.
 
