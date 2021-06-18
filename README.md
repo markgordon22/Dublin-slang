@@ -604,7 +604,7 @@ can't make a wor without making an account.
 
 ![image](testing/userstories/souserstory.png)
 
-2. To allow users to soley edit, delete their own words that they have added.
+2. To allow users to soley edit, delete their own words that they have added. Here the user mark2000 has only 1 word added and can only edit hsi own word.
 
 ![image](testing/userstories/souserstory2.png)
 
@@ -619,18 +619,31 @@ admin has edit and delete possibilities for all words of the dictionary.
 
 ![image](testing/userstories/souserstory3(3).png)
 
+## Crud testing
 
+Crud operations contain the create, read,update and delete operations. Users with Irish slang can create a profile or
+add a word, phrase. Users can also read other users words they've added from other users. This is the under the READ operations. Users can 
+UPDATE from the edit word page of the site and their added word can be removed from the glossary with the use of the DELETE functionality.
+This was all covered in the Data centric course materials.
 
+Create
 
+Click "Register" on the navbar where I can register an account as a user. The profile page says that the I've not added
+a word. At the bottom of the profile page I can spot an add word button which will navigate me to the add word page.
 
+Read
 
+I  am going to add the word "banger" to the glossary as it's not been added yet and is an Irish Slang term for a very worn car or motor.
 
+![image](testing/crudtesting/readimg2.png)
 
+Pictured below the word "banger" has officially been created and is present in the glossary.
 
+![image](testing/crudtesting/readimg1.png)
 
+Addition of the word "banger" can also be viewed if you navigate to the profile page.
 
-
-
+![image](testing/crudtesting/readimg3.png)
 
 
 
