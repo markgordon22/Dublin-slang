@@ -47,16 +47,14 @@
 # User Experience
 
 ## The project Goal  
-* The goal of this project is to creare a fictional glossary/dictionary website for words that are spoken on a daily basis among Irish people. It is aimed at people who wish to
+* The goal of this project is to creare a fictional glossary/dictionary website for words that are spoken on a daily basis among Irish people. It is aimed at people who may wish to
 visit Ireland in the future and have an interest or an intrigue in words/phrases Irish people use. I want to create a website that is fun to use for the user
 and that their personal details are secure.
-
 
 # User Stories
 
 ## First time user stories
 
-* I want to be able to know what the site is about.
 * I want to be able to navigate with no issues throughout the site.
 * I want to be able to search for words commonly used in Ireland.
 * I want to be able to create my account and to add my own words to the site.
@@ -82,39 +80,38 @@ and that their personal details are secure.
 * To navigate around the site in an easy fashion with no broken internal links
 * All features such as login, register, contact form, collapsible and card-panels to be operating efficentley
 * All text content to eligible, readbale and viewable across different devices such as desktop, tablet and mobile.
-* for website to have a high level of safety and security when user is logged in the copied url once pasted when the
+* for website to have a high level of safety and security when user is logged in, the copied url once pasted when the
   url has logged out will be redirected back to the log in page.
 
 ## Expectations
 
-* Navigation of the website is working appropriatley efficentley with no broken internal links.
-* All features in above in requirements section is working appropriatley.
+* Navigation of the website is working appropriatley and efficentley with no broken internal links.
+* All features above in requirements section is working appropriatley.
 * Text content is easy to read,view across all devices
 * Website is highly secured with user's profile secured against intrusion from other users, vistors to the site.
 
 # Design Choices
 
-* Considering this is an Irish slang dinctionary I wanted the color scheme to adopt the tricolor flag colors of Ireland which is green, white and orange.
+* Considering this is an Irish slang dictionary I wanted the color scheme to adopt the tricolor flag colors of Ireland which is green, white and orange.
   The feeling was that it was the most appropriate design choice of colors as users will instantly feel the connection between the Irish tricolors and the slang glossary.
   An image of a leprachaun is present on the homepage to offer imagery but to also offer a well reknowned representation of Irish fiction.
-  Features such as login, register, contact form, search bar and collapsible glossary are styled identically for consistency in design. Collapsible, footer,buttons and navbar and sidenav are taken from
-  [CSS Materialize](https://materializecss.com/) for instant responsiveness and positive looking user interface
+  Features such as login, register search bar and collapsible glossary are styled similarly for consistency in design. Collapsible, footer,buttons and navbar and sidenav are taken from
+  [CSS Materialize](https://materializecss.com/) for instant responsiveness and positive looking user interface.
 
 
 ## typography
 
-* [Google Fonts](https://fonts.google.com/) was used for the site. The font family adopted  was  Mate SC as I felt it was an attractive, readbale and eligible font to use. In case Mate SC did not
+* [Google Fonts](https://fonts.google.com/) was used for the site. The font family adopted  was  Mate SC as I felt it was an attractive, readable and eligible font to use. In case Mate SC did not
   load sans serif was used as the back up font.
 
 
 ## Icons
-* [Font Awesome](https://fontawesome.com/) icons were used as a decorative purpose used to style the site including the social media links, buttons and form elements such as the login and 
-  and registration.
+* [Font Awesome](https://fontawesome.com/) icons were used as a decorative purpose used to style the site including the social media links in the footer.
 
 
 ## Colours
 
-* [Coloors](https://coolors.co/) was used to portray visually my color scheme adopted. The colors used resembled the Irish flag to get an Irish feel as the site is a 
+* [Coloors](https://coolors.co/) was used to portray, visually my color scheme adoption. The colors used resembled the Irish flag to get an Irish feel as the site is a 
 Irish slang dictionary. To view color scheme click [here](https://github.com/markgordon22/irish-slang/blob/master/wireframes/colorscheme.png).
 
 
@@ -122,9 +119,8 @@ Irish slang dictionary. To view color scheme click [here](https://github.com/mar
 
 * The sole image used for the site was a hero image on the home page of a leprachaun with a pint of beer. Once the user accesses home page and begins
 their journey through the site they will see the image. Image of the leprachaun was used as it fits one of the stereotypes that leprachauns exist.
-Image of the leprachaun evokes the feeling of Ireland to the user that can not be carried out with plain text. 
+Image of the leprachaun evokes the feeling of Ireland instantly to the user that can not be carried out with plain text. 
 Click [here](https://github.com/markgordon22/irish-slang/blob/master/static/img/leprachaunimage.jpg) to see the image.
-
 
 ## Wireframes
 
@@ -159,11 +155,10 @@ Text version of the schema can be viewed [here](/workspace/Dublin-slang/wirefram
 
 * Simple and easy navigation around the site.
 * Consistent and easy to follow design.
-* Contact form for user to enquire about any concerns or queries they have now or in the future.
 * Login, register forms for user to log into their account or register account
 * Glossary of Irish words for user to browse through slang words of Ireland
 * Search bar for user to search a word.
-* CSS materialize buttons and cards.
+* CSS materialize buttons and cards, navbar,footer and sidenav.
 * Responsive on phone, tablet and desktop devices.
 
 # Features left to implement
@@ -195,9 +190,7 @@ Text version of the schema can be viewed [here](/workspace/Dublin-slang/wirefram
 Libraries and Frameworks
 
 * [Am I Responsive](http://ami.responsivedesign.is/) Used to create a mockup of website.
-*  [Pip3](https://pypi.org/project/pip/) to install Python modules from the command line.
-* [Autoprefixer CSS Online](https://autoprefixer.github.io/)
-    -  used to parse project CSS and add vendor prefixes.
+* [Pip3](https://pypi.org/project/pip/) to install Python modules from the command line.
 * [BSon](http://bsonspec.org/)
     - This was imported in order to access the data used across the site.
 * [HTML validator](https://validator.w3.org/)
@@ -223,9 +216,9 @@ Libraries and Frameworks
 * [Font Awesome](https://fontawesome.com/)
     - Font awesome used in site to implement icons for atractive visual purposes, boosting user experience. 
 * [Git](https://git-scm.com/)
-    - Git - for version control with the use of the gitpod terminal to commit to Git and push code to GitHub.
+    - for version control with the use of the gitpod terminal to commit to Git and push code to GitHub.
 * [GitHub](https://github.com/)
-    - GitHub - used for storage of code after it has been pushed Gitpod terminal.
+    - used for storage of code after it has been pushed Gitpod terminal.
 * [Google Fonts](https://fonts.google.com/)
     - Google fonts were used to import selected font
 * [CSS formatter](https://www.cleancss.com/css-beautify/)
@@ -237,7 +230,7 @@ Libraries and Frameworks
 * [Autoprefixer](https://autoprefixer.github.io/) 
     - to add vendor prefixes to css
 * [Materialize 1.0.0](https://materializecss.com/)
-    - used for responsiveness and styling purposes. Materialize was used for cards,navabar,footer and buttons.   
+    - used for responsiveness and styling purposes. Materialize was used for cards,navbar,footer, sidenav and buttons.   
 * [MongoDB](https://www.mongodb.com/1)
     - MongoDB - used to host data on site.
 * [HTML freeformatter](https://www.freeformatter.com/html-formatter.html)
@@ -260,29 +253,29 @@ Libraries and Frameworks
 
 * Desktop test results
 
-* [Add category](/workspace/Dublin-slang/testing/lighthouse/desktop-addcategory.pdf)
-* [Add word](/workspace/Dublin-slang/testing/lighthouse/desktop-addword.pdf)
-* [Categories](/workspace/Dublin-slang/testing/lighthouse/desktop-categories.pdf)
-* [Edit category](/workspace/Dublin-slang/testing/lighthouse/desktop-editcategory.pdf)
-* [Edit word](/workspace/Dublin-slang/testing/lighthouse/desktop-editword.pdf)
-* [Glossary](/workspace/Dublin-slang/testing/lighthouse/desktop-glossary.pdf)
-* [Log in](/workspace/Dublin-slang/testing/lighthouse/desktop-login.pdf)
-* [Profile](/workspace/Dublin-slang/testing/lighthouse/desktop-profile.pdf)
-* [Register](/workspace/Dublin-slang/testing/lighthouse/desktop-register.pdf)
-* [Welcome](/workspace/Dublin-slang/testing/lighthouse/desktop-welcome.pdf)
+* [Add category](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/desktop-addcategory.pdf)
+* [Add word](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/desktop-addword.pdf)
+* [Categories](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/desktop-categories.pdf)
+* [Edit category](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/desktop-editcategory.pdf)
+* [Edit word](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/desktop-editword.pdf)
+* [Glossary](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/desktop-glossary.pdf)
+* [Log in](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/desktop-login.pdf)
+* [Profile](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/desktop-profile.pdf)
+* [Register](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/desktop-register.pdf)
+* [Welcome](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/desktop-welcome.pdf)
 
 * Mobile test results
 
-* [Add category](/workspace/Dublin-slang/testing/lighthouse/mobile-addcategory.pdf)
-* [Add word](/workspace/Dublin-slang/testing/lighthouse/mobile-addword.pdf)
-* [Categories](/workspace/Dublin-slang/testing/lighthouse/mobile-categories.pdf)
-* [Edit category](/workspace/Dublin-slang/testing/lighthouse/mobile-editcategory.pdf)
-* [Edit word](/workspace/Dublin-slang/testing/lighthouse/mobile-editword.pdf)
-* [Glossary](/workspace/Dublin-slang/testing/lighthouse/mobile-glossary.pdf)
-* [Login](/workspace/Dublin-slang/testing/lighthouse/mobile-login.pdf)
-* [Profile](/workspace/Dublin-slang/testing/lighthouse/mobile-profile.pdf)
-* [Register](/workspace/Dublin-slang/testing/lighthouse/mobile-register.pdf)
-* [Welcome](/workspace/Dublin-slang/testing/lighthouse/mobile-welcome.pdf)
+* [Add category](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/mobile-addcategory.pdf)
+* [Add word](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/mobile-addword.pdf)
+* [Categories](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/mobile-categories.pdf)
+* [Edit category](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/mobile-editcategory.pdf)
+* [Edit word](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/mobile-editword.pdf)
+* [Glossary](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/mobile-glossary.pdf)
+* [Login](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/mobile-login.pdf)
+* [Profile](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/mobile-profile.pdf)
+* [Register](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/mobile-register.pdf)
+* [Welcome](https://github.com/markgordon22/irish-slang/blob/master/testing/lighthouse/mobile-welcome.pdf)
 
 ## Bugs
 
@@ -626,11 +619,6 @@ Follow thse steps to create an app on Heroku
 - make sure the Procfile and requirements.txt have been added to the staging area to Github.
 
 - click the "Enable Automatic Deploys" and "Deploy Branch". The new app will be created and can be viewed by simply clicking 'open app'.
-
-
-
-
-
 
 # Credits
 
