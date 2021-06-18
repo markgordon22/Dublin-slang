@@ -645,6 +645,17 @@ Addition of the word "banger" can also be viewed if you navigate to the profile 
 
 ![image](testing/crudtesting/readimg3.png)
 
+Update
+
+If I wish to update a word that I have added to the dictionary I can navigate to the profile page or the glossary, find the word I wish to update and
+click the edit button on the collapsible header. Once I click the edit button I will redirected to the edit word page and I can see all the inputs
+that were inserted for that word. Below I simply redefined the word banger to "a very old car".
+
+![image](testing/crudtesting/updateimg.png)
+
+
+
+
 
 
 
