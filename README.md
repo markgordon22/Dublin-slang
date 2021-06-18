@@ -58,13 +58,12 @@ and that their personal details are secure.
 * I want to be able to navigate with no issues throughout the site.
 * I want to be able to search for words commonly used in Ireland.
 * I want to be able to create my account and to add my own words to the site.
-* I want to be able to see commonly used words by Irish people through viewing the most popular and/or least popular additions.
 
 ## Registered user stories
 
 * I want to be able to safely and easily log in, log out of the site.
 * I want to be able to edit, delete the words that I added to the site.
-* I want to be able to edit, delete my profile that I created.
+* I want to be able to delete the profile that I created.
 * I want to be able to see words added by other users of the site.
 
 ## Site owner user stories
@@ -245,7 +244,6 @@ Libraries and Frameworks
 
 
 # Testing
-
 
 ## Lighthouse testing
 
@@ -491,6 +489,116 @@ no errors.
 
 
 ## Testing User Stories
+
+### First time user stories
+
+1. I want to be able to navigate with no issues throughout the site.
+
+pictured below is the home page with the navbar. When user is logged in (first image) all navlinks are working fine along with the navlinks when the user
+is not logged in(second image)
+
+User is logged in navbar
+
+![image](testing/userstories/userstory1(1).png)
+
+User is logged out navbar
+
+![image](testing/userstories/userstory1(2).png)
+
+The navbar is fully responsive so all navlinks will always be on display. all navlinks have been tested to confirm they lin to their correct
+destination.
+
+2. I want to be able to search for words commonly used in Ireland.
+
+Below is the search bar on the glossary page, once the user searches a word that is in the dictionary, then the word will appear. However If
+the word ends up not being in the dictionary then an else statement will be fired including a very Irish saying "jayney mac".
+
+The search bar
+
+![image](testing/userstories/userstory2(1).png)
+
+When user goes to search for a word that is in the dictionary, the word will appear in its collapsible header. The example used here will be the word "craic".
+
+![image](testing/userstories/userstory2(2).png)
+
+However when the user goes to search for a word that is not in the dictionary, the else statement will be fired.
+
+![image](testing/userstories/userstory2(3).png)
+
+3. I want to be able to create my account and to add my own words to the site.
+
+To create an account the user must go to the register page and fulfill the criteria of 8 characters and less than 15 characters for their username and password.
+The user can go and add their own words via the add word navlink in the navbar(see user story 1 for 'add word' link in navbar) or via the
+add word button on the glossary page or their profile page.
+
+How user can register an account. A random username was chosen just for demonstration purposes.
+
+![image](testing/userstories/userstory3(1).png)
+
+Once user's account is created they will be redirected to their profile page.
+
+![image](testing/userstories/userstory3(2).png)
+
+For user to add words to the site, they click add word in navbar or add word button on the profile page pictured above. They will then be brought to the page.
+
+![image](testing/userstories/userstory3(3).png)
+
+### Registered user stories
+
+1. I want to be able to safely and easily log in, log out of the site.
+
+Below is when the user is about to log out, the url in the browser search bar will be copied and pasted back into the url once user logs out to determine
+user security level. 
+
+![image](testing/userstories/reguserstory1(1).png)
+
+When user now goes to log out they receive a flash confirmation message that they have been logged out.
+
+![image](testing/userstories/reguserstory1(2).png)
+
+trying to copy and paste the admin url back into the browser search bar will flash a message that the user must be logged in to view this page. This creates user security
+for their own profile.
+
+![image](testing/userstories/reguserstory1(3).png)
+
+User who wishes to log in can do so via the log in page pictured below. The user can also log in via the link below the register form on the register page.
+
+![image](testing/userstories/reguserstory(4).png)
+
+link below register form on register page for user who wishes to login.
+
+![image](testing/userstories/reguserstory1(5).png)
+
+2. I want to be able to edit, delete the words that I added to the site.
+
+Once user is signed in they have the option of viewing the words they have added to the glossary or from their profile. Accompanying those words 
+are an edit and a delete button.
+
+profile page.
+
+![image](testing/userstories/reguserstory2(1).png)
+
+Glossary page
+
+![image](testing/userstories/reguserstory2(2).png)
+
+3. I want to be able to delete my profile that I created.
+
+If user wishes to delete their profile they can do this by going to their profile page and go to the bottom of the page where you see the button that reads
+delete profile. Once user clicks button a modal will pop out asking the user if they are sure that they wish to delete their profile.
+
+![image](testing/userstories/reguserstory3(1).png)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
