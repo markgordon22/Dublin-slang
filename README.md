@@ -1,6 +1,6 @@
 # Irish Slang
 
-![image](wireframes/mockupimg.png)
+![image](wireframes/mockup.png)
 
 # Table of contents
 - [User Experience](#user-experience)
@@ -563,7 +563,7 @@ for their own profile.
 
 User who wishes to log in can do so via the log in page pictured below. The user can also log in via the link below the register form on the register page.
 
-![image](testing/userstories/reguserstory(4).png)
+![image](testing/userstories/reguserstory1(4).png)
 
 link below register form on register page for user who wishes to login.
 
@@ -588,6 +588,37 @@ If user wishes to delete their profile they can do this by going to their profil
 delete profile. Once user clicks button a modal will pop out asking the user if they are sure that they wish to delete their profile.
 
 ![image](testing/userstories/reguserstory3(1).png)
+
+4. I want to be able to see words added by other users of the site.
+
+User can see words added by other users but can not edit or delete those words. Pictured below user can see words added by other users.
+
+![image](testing/userstories/reguserstory4(1)
+
+## Site owner stories
+
+1. To give site accessibility even if user has not created an account.
+
+Despite user not having an account the user can still browse through the dictionary. See below that no button can be edited or deleted because the user
+can't make a wor without making an account.
+
+![image](testing/userstories/souserstory.png)
+
+2. To allow users to soley edit, delete their own words that they have added.
+
+![image](testing/userstories/souserstory2.png)
+
+3. To be able to delete any material added by a registered user which falls under misconduct of site regulations.
+
+Since the site owner is the admin they have the power to delete any material which may cause offence to some users of the site. Below the user
+admin has edit and delete possibilities for all words of the dictionary.
+
+![image](testing/userstories/souserstory3(1).png)
+
+![image](testing/userstories/souserstory3(2).png)
+
+![image](testing/userstories/souserstory3(3).png)
+
 
 
 
