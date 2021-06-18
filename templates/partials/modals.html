@@ -3,7 +3,7 @@
 {% if word %}
 <div id="modal-{{ word._id }}" class="modal">
   <div class="modal-content center-align">
-    <h4 class="black-text">Are you sure you want to delete "{{ word.word_name }}"" ?</h4>
+    <h4 class="black-text">Are you sure you want to delete "{{ word.word_name }}" ?</h4>
     <p class="black-text">Once deleted it's gone forever.</p>
   </div>
   <div class="modal-footer center-align;" style="background-color: rgb(255, 166, 0);">
@@ -16,7 +16,7 @@
 {% if category %}
 <div id="modal-{{ category._id }}" class="modal">
   <div class="modal-content center-align">
-    <h4 class="black-text">Are you sure you want to delete the {{ category.category_name }} category?</h4>
+    <h4 class="black-text">Are you sure you want to delete "{{ category.category_name }}" category?</h4>
     <p class="black-text">Once deleted it's gone forever.</p>
   </div>
   <div class="modal-footer center-align" style="background-color: rgb(255, 166, 0);">
@@ -29,7 +29,7 @@
 <div id="modal-{{ username._id }}" class="modal center-align">
   <!-- Modal Content -->
   <div class="modal-content center-align">
-    <h4 class="black-text">Ye sure pal about leaving us {{ username._id }}?</h4>
+    <h4 class="black-text">Ye sure about leaving us {{ username._id }}?</h4>
     <p class="black-text">Profile will be terminated, though your word will remain unless deleted</p>
   </div>
   <div class="modal-footer center-align" style="background-color: rgb(255, 166, 0);">
